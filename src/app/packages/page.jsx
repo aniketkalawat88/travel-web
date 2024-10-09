@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../_components/navbar'
+import Packages from '../_components/packages'
+import PackageHero from '../_components/package-hero'
 
-const Packages = () => {
+const Pack = () => {
   return (
-    <div>Packages</div>
+    <div>
+        <PackageHero />
+       <Packages />
+
+    </div>
   )
 }
 
-export default Packages
+export default Pack
