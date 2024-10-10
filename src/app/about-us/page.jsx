@@ -1,5 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import React from 'react'
+import TestinomalSlider from '../_components/testinomal-slider'
+import HomeAbout from '../_components/home-about'
 
 const AboutUs = () => {
   return (
@@ -19,28 +22,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex py-24 px-20">
-        <div className="left md:w-[50%] flex flex-col items-center justify-center gap-2">
-          <div className="top h-[48%]  bg-black">
-            <img src="/assets/images/about-images/green.avif"
-              alt="Background Image"
-              className="object-cover object-center w-full h-full" />
-          </div>
-          <div className="down h-[48%] flex gap-2 items-center justify-center">
-            <img src="/assets/images/about-images/green.avif"
-              alt="Background Image"
-              className="object-cover object-center w-[40%] h-full" />
-            <img src="/assets/images/about-images/green.avif"
-              alt="Background Image"
-              className="object-cover object-center w-[40%] h-full" />
-          </div>
-        </div>
-        <div className="right md:w-[50%] flex flex-col gap-4 items-start justify-center px-4">
-          <h1 className="md:text-4xl font-[700]">What We Are Offering</h1>
-          <p className="md:text-xl font-[400]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quas tempore reiciendis sint dolorem enim maxime dicta ipsa dignissimos ratione, dolores natus tenetur modi porro quaerat vero optio laudantium odit neque nulla? Iste veniam ea, et explicabo natus voluptatem facilis vel minima quisquam libero eligendi sed sint, ullam error suscipit. Ratione placeat provident minima sequi corporis ex delectus quae autem!</p>
-        </div>
-      </div>
-      <div className="flex items-center justify-evenly py-4 bg-[#e9e9e9d8]">
+      <HomeAbout />
+      <div className="flex items-center justify-evenly py-4 text-primary-main">
         <div className="experience flex flex-col items-center">
           <h1 className="text-[40px] font-[600]">10+</h1>
           <p className="text-[32px] font-[400]">Years Experience</p>
@@ -54,7 +37,7 @@ const AboutUs = () => {
           <p className="text-[32px] font-[400]">Traveler Connect</p>
         </div>
       </div>
-      <div className="gallery h-[620px] py-3">
+      <div className="gallery h-[620px] py-6">
         <div className="line1 h-[32%] flex gap-2 py-1">
           <div className="photo1 h-full w-[22%]">
             <img className="object-cover object-center w-full h-full" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc1fHxuYXR1cmV8ZW58MHx8MHx8fDA%3D" alt="" />
@@ -101,29 +84,6 @@ const AboutUs = () => {
 
       </div>
 
-      <div className="reviews">
-        <h1 className="md:text-4xl font-[700] ml-20">What our clients say about us</h1>
-        <p className="md:text-xl font-[400] ml-20 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <div className="flex gap-2 items-center justify-center my-8">
-          <div className="box1 h-[300px] w-[400px] bg-black px-4 py-4">
-            <h1 className="text-2xl text-white">John Doe</h1>
-            <p className="text-sm text-[#e9e9e98a]">Bhopal, MP</p>
-            <p className="text-lg mt-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores repellat eos quia aperiam soluta distinctio minima suscipit ipsum architecto?</p>
-          </div>
-          <div className="box1 h-[300px] w-[400px] bg-black px-4 py-4">
-            <h1 className="text-2xl text-white">John Doe</h1>
-            <p className="text-sm text-[#e9e9e98a]">Mumbai, MH</p>
-            <p className="text-lg mt-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores repellat eos quia aperiam soluta distinctio minima suscipit ipsum architecto?</p>
-          </div>
-          <div className="box1 h-[300px] w-[400px] bg-black px-4 py-4">
-            <h1 className="text-2xl text-white">John Doe</h1>
-            <p className="text-sm text-[#e9e9e98a]">Surat, Gujarat</p>
-            <p className="text-lg mt-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores repellat eos quia aperiam soluta distinctio minima suscipit ipsum architecto?</p>
-          </div>
-
-          
-        </div>
-      </div>
 
     </>
   )
