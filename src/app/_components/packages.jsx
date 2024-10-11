@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaLocationDot } from "react-icons/fa6";
 
 const Packages = () => {
     const pack = [
@@ -7,24 +8,28 @@ const Packages = () => {
         ""
     ]
     return (
-        <div className='max-w-6xl mx-auto space-y-6 my-6'>
+        <div className='max-w-6xl mx-auto space-y-16 my-10'>
             {
                 pack.map((ele, i) => (
 
-                    <div key={i} className="h-[420px] rounded-lg overflow-hidden lg:max-w-none dark:bg-[#f0f0f073] lg:flex  shadow-teal border-4 border-primary-main">
-                        <div className="w-[50%] flex items-center justify-center dark:bg-[#f0f0f073]">
-                        <img className="w-[90%] h-[90%] object-cover rounded-lg" src="/assets/images/about-images/about-main.avif" alt="" />
+                    <div key={i} className="h-[440px] overflow-hidden lg:max-w-none lg:flex  shadow-teal  bg-white rounded-lg shadow-lg">
+                        <div className="w-[50%] flex items-center justify-center py-3">
+                        <img className="w-[90%] h-full object-cover rounded-lg" src="/assets/images/about-images/03.jpg" alt="" />
                         </div>
-                        <div className="bg-white w-[60%] px-6 py-4 lg:flex-shrink-1  dark:bg-[#f0f0f073]">
-                            <h3 className="text-xl text-left leading-8 font-extrabold text-black sm:text-2xl sm:leading-9 dark:text-black">
+                        <div className="bg-white w-[60%] px-6 lg:flex-shrink-1">
+                        <div className="flex items-center text-primary-main my-2">
+                    <FaLocationDot className="mr-2 text-[20px]"></FaLocationDot>
+                    <span className="text-[16px]"> Pachmarhi</span>
+                    </div>
+                            <h3 className="text-xl text-left leading-8 font-bold text-black sm:text-2xl sm:leading-9 dark:text-black">
                                 Couple Friendly Budget package By  Suhana Tours and Travels
                                 For 2 pax
                             </h3>
                             <div className="mt-4">
                                 
-                                <ul className="pl-0 lg:grid lg:gap-x-8 lg:gap-y-5 space-y-5 lg:space-y-0">
+                                <ul className="pl-0 lg:grid lg:gap-y-4 space-y-5 lg:space-y-0">
                                     <li className="flex items-start lg:col-span-1">
-                                        <div className="flex-shrink-0">
+                                        {/* <div className="flex-shrink-0">
                                             <svg
                                                 className="h-5 w-5 text-primary-main dark:text-primary-main/90"
                                                 fill="currentColor"
@@ -36,13 +41,13 @@ const Packages = () => {
                                                     clipRule="evenodd"
                                                 ></path>
                                             </svg>
-                                        </div>
-                                        <p className="ml-3 text-lg leading-5 text-black font-ttnorms text-left ">
+                                        </div> */}
+                                        <p className="text-lg leading-5 text-black font-ttnorms text-left ">
                                         Pick Up from Pipariya to pachmarhi
                                         </p>
                                     </li>
                                     <li className="flex items-start lg:col-span-1">
-                                        <div className="flex-shrink-0">
+                                        {/* <div className="flex-shrink-0">
                                             <svg
                                                 className="h-5 w-5 text-primary-main dark:text-primary-main/90"
                                                 fill="currentColor"
@@ -54,13 +59,13 @@ const Packages = () => {
                                                     clipRule="evenodd"
                                                 ></path>
                                             </svg>
-                                        </div>
-                                        <p className="ml-3 text-lg leading-5 text-black font-ttnorms text-left ">
+                                        </div> */}
+                                        <p className="text-lg leading-5 text-black font-ttnorms text-left ">
                                         Drop from pachmarhi to pipariya
                                         </p>
                                     </li>
                                     <li className="flex items-start lg:col-span-1">
-                                        <div className="flex-shrink-0">
+                                        {/* <div className="flex-shrink-0">
                                             <svg
                                                 className="h-5 w-5 text-primary-main dark:text-primary-main/90"
                                                 fill="currentColor"
@@ -72,13 +77,13 @@ const Packages = () => {
                                                     clipRule="evenodd"
                                                 ></path>
                                             </svg>
-                                        </div>
-                                        <p className="ml-3 text-lg leading-5 text-black font-ttnorms text-left">
+                                        </div> */}
+                                        <p className="text-lg leading-5 text-black font-ttnorms text-left">
                                         3N/2D stay in Budget Non Ac room
                                         </p>
                                     </li>
                                     <li className="flex items-start lg:col-span-1">
-                                        <div className="flex-shrink-0">
+                                        {/* <div className="flex-shrink-0">
                                             <svg
                                                 className="h-5 w-5 text-primary-main dark:text-primary-main/90"
                                                 fill="currentColor"
@@ -90,23 +95,23 @@ const Packages = () => {
                                                     clipRule="evenodd"
                                                 ></path>
                                             </svg>
-                                        </div>
-                                        <p className="ml-3 text-lg leading-5 text-black font-ttnorms text-left">
+                                        </div> */}
+                                        <p className="text-lg leading-5 text-black font-ttnorms text-left">
                                         Sightseeing-non entry/forest entry 
                                         </p>
                                     </li>
-                                    <li className="flex items-start lg:col-span-1">
+                                    <li className="flex items-start lg:col-span-1 pt-5">
                                         <p className="mt-4 text-lg leading-5 text-primary-main font-ttnorms text-left ">
-                                        Total package cost =  10000.00 
+                                        <span className="text-[30px] font-700">10,000.00 /</span> Total package cost
                                         </p>
                                     </li>
                                     
                                 </ul>
                                 <div className="lg:mt-2">
-                                <div className="rounded-md shadow w-[50%]">
+                                <div className="rounded-md shadow w-[40%]">
                                     <a
                                         href="#"
-                                        className="flex items-center justify-center px-5 py-3 leading-6 font-medium rounded-md focus:outline-none focus:ring transition duration-200 ease-in-out shadow-teal border-2 border-primary-main bg-white hover:bg-primary-main hover:shadow-teal-hover text-primary-main hover:text-white text-lg relative z-20 dark:bg-primary-main dark:text-white dark:hover:bg-teal-500 dark:hover:text-white"
+                                        className="flex items-center justify-center px-5 py-3 leading-6 font-medium rounded-md focus:outline-none focus:ring transition duration-200 ease-in-out shadow-teal border-2 border-primary-main bg-white text-primary-main  text-lg relative z-20 dark:bg-primary-main dark:text-white "
                                     >
                                         Book Packages
                                     </a>

@@ -20,17 +20,17 @@ export default function HeroSection() {
   const arr = [
     {
       name: "",
-      img: "/assets/images/about-images/07.jpg",
+      img: "/assets/images/about-images/10.png",
       val1: "",
     },
     {
       name: "",
-      img: "/assets/images/about-images/02.jpg",
+      img: "/assets/images/about-images/05.jpg",
       val1: "",
     },
     {
       name: "",
-      img: "/assets/images/about-images/03.jpg",
+      img: "/assets/images/about-images/06.jpg",
       val1: "",
     },
   ];
@@ -72,21 +72,18 @@ export default function HeroSection() {
                   <p
                     className={`text-xs sm:text-base tracking-widest max-md:mt-10 mb-4`}
                   >
-                    COME TO EXPERIENCE IN TURIO
+                    Pachmarhi ke Maze, Bas Tumhare Liye
                   </p>
-                  <h1 className="xl:text-[5rem] lg:text-5xl sm:text-2xl text-base font-bold text-primary-main uppercase">
-                    Grand Canyon
+                  <h1 className="xl:text-[3rem] lg:text-5xl sm:text-2xl text-base font-bold text-primary-main uppercase">
+                  Discover the Magic of 
                   </h1>
                   <h2
                     className={`xl:text-[5rem] lg:text-5xl sm:text-2xl text-base font-bold md:mb-4 mb-2 uppercase ${londrinasketch.className}`}
                   >
-                    {`Go explore`}
+                    {`Pachmarhi`}
                   </h2>
                   <p className="text-xs sm:text-sm md:mb-6 max-w-2xl mx-auto mb-2">
-                    Sed convallis sit amet leo quis feugiat. Nunc interdum
-                    mollis facilisis. feugi Donec id the urna aliquet, suscipit
-                    turpis ut Donec id urna aliquet, suscipit turpis ut,
-                    facilisis purus.Sed convallis sit amet leo quis.
+                  Suhana Tours and Travels offers personalized tours in Pachmarhi, showcasing its stunning nature, rich culture, and hidden gems for unforgettable adventures.
                   </p>
                   <Link
                     href="#"
