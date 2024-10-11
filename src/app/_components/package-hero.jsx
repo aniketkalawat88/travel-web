@@ -1,18 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 
-const PackageHero = () => {
+const PackageHero = ({name}) => {
   return (
-    <div className="relative h-[60vh] w-full">
-    <img
-      src="https://images.unsplash.com/photo-1494783367193-149034c05e8f"
-      alt="Background Image"
-      className="absolute inset-0 w-full h-full object-cover filter blur-sm"
-    />
-    <div className="absolute inset-0 bg-black bg-opacity-50" />
-    <div className="absolute inset-0 flex flex-col items-center justify-center">
-      <h1 className="text-4xl text-white font-bold">Hello, World!</h1>
-      <p className="text-xl text-white mt-4">This is a sample text</p>
+    <div className="relative md:h-[30vw] sm:h-[60vw] h-[80vw] text-white overflow-hidden">
+    <div className="absolute inset-0">
+      <img
+        src="/assets/images/about-images/about-main.avif"
+        alt="Background Image"
+        className="object-cover object-center w-full h-full"
+      />
+      <div className="absolute inset-0 bg-black/60" />
+    </div>
+    <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
+      <div className="font-medium text-center ">
+        <p className="text-primary-main text-[36px]">{name}</p>
+      </div>
     </div>
   </div>
   

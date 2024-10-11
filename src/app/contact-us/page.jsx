@@ -8,7 +8,7 @@ import { IoMdPricetags } from 'react-icons/io'
 const page = () => {
   return (
     <div>
-        <PackageHero />
+         <PackageHero name={"Contact Us"} />
         <HomeContact />
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 sm:gap-6 gap-4 my-10 max-w-7xl mx-auto xl:px-0 px-6">
         <div className="rounded-lg overflow-hidden">

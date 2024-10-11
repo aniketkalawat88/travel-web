@@ -24,15 +24,15 @@ const HomeContact = () => {
     
   return (
     <div className="px-2 md:px-4 my-4 max-w-7xl mx-auto shadow-md bg-gray-800/10 rounded-lg" >
-      <section className="p-6">
+      <section className="md:p-6 sm:p-4 p-2">
         <div className="flex justify-center">
           <div className="text-center md:max-w-xl lg:max-w-3xl">
-            <h2 className="mb-12 px-6 text-3xl font-bold text-primary-main ">Contact Us</h2>
+            <h2 className="md:mb-12 px-6 md:text-3xl sm:text-2xl text-xl font-bold text-primary-main ">Contact Us</h2>
           </div>
         </div>
         <div className="">
       
-        <form className="grid grid-cols-3 gap-6">
+        <form className="grid md:grid-cols-3 md:gap-6 sm:gap-4 gap-2 md:text-base text-sm">
           <div className="mb-3 w-full">
             <label className="block font-medium mb-[2px] text-primary-main" htmlFor="name">
               Name
@@ -40,7 +40,7 @@ const HomeContact = () => {
             <input
               type="text"
               name="name"
-              className="p-3 border w-full outline-none rounded-md"
+              className="md:p-3 sm:p-2 p-1 border w-full outline-none rounded-md"
               id="name"
               placeholder="Name"
               value={formData.name}
@@ -54,7 +54,7 @@ const HomeContact = () => {
             <input
               type="email"
               name="email"
-              className="p-3 border w-full outline-none rounded-md"
+              className="md:p-3 sm:p-2 p-1 border w-full outline-none rounded-md"
               id="email"
               placeholder="Enter your email address"
               value={formData.email}
@@ -68,29 +68,29 @@ const HomeContact = () => {
             <input
               type="number"
               name="number"
-              className="p-3 border w-full outline-none rounded-md"
+              className="md:p-3 sm:p-2 p-1 border w-full outline-none rounded-md"
               id="number"
               placeholder="Enter your phone number"
               value={formData.number}
               onChange={handleChange}
             />
           </div>
-          <div className="mb-3 w-full col-span-3">
+          <div className="mb-3 w-full md:col-span-3">
             <label className="block font-medium mb-[2px] text-primary-main" htmlFor="message">
               Message
             </label>
             <textarea
               name="message"
-              className="p-3 border rounded-[5px] w-full outline-none resize-none h-40"
+              className="md:p-3 sm:p-2 p-1 border rounded-[5px] w-full outline-none resize-none md:h-40 sm:h-32 h-28 "
               placeholder="Enter your message"
               value={formData.message}
               onChange={handleChange}
             />
           </div>
-          <div className="col-span-3">
+          <div className="md:col-span-3">
             <button
               type="button"
-              className="mb-6 inline-block rounded bg-primary-main px-6 py-2.5 font-medium leading-normal text-white hover:shadow-md hover:bg-primary-main w-fit"
+              className="mb-6 inline-block rounded bg-primary-main px-6 py-2.5 font-medium leading-normal text-white hover:shadow-md hover:bg-primary-main sm:w-fit w-full sm:text-base text-xs"
               onClick={handleSubmit}
             >
               Send Message

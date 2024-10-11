@@ -46,9 +46,6 @@ export default function HeroSection() {
     },
   ]
   return (
-    <div className="max-w-7xl mx-auto my-12">
-     {/* <h1 className="md:text-4xl font-[700] text-black">What our clients say</h1>
-     <p className="md:text-xl font-[400] my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> */}
      <div id="review" className="relative w-full h-full max-w-7xl mx-auto md:py-10 py-6  xl:px-10 px-6 bg-[#FEFCFB]">
     <div className="grid md:grid-cols-2 grid-cols-1 w-full h-full">
         <div>
@@ -61,10 +58,7 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-      <Swiper
-        // pagination={{
-        //     clickable: true,
-        //   }}   
+      <Swiper  
         AutoPlay={true}
         loop={true} 
         spaceBetween={40}  
@@ -92,74 +86,6 @@ export default function HeroSection() {
 
     </div>
     </div>
-      {/* <Swiper
-        spaceBetween={30}
-        loop={true}
-        autoplay
-        navigation={true}
-        breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 5,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-          }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[EffectFade, Navigation, Pagination]}
-        className="mySwiper"
-      >
-        {arr.map((ele, i) => (
-          <SwiperSlide key={i}>
-            <div className="box1 h-[300px] w-full bg-secondary-main px-4 py-4 rounded-md">
-              <h1 className="text-2xl text-white">John Doe</h1>
-              <p className="text-sm text-[#e9e9e98a]">Bhopal, MP</p>
-              <p className="text-lg mt-4 text-white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Deserunt maiores repellat eos quia aperiam soluta distinctio
-                minima suscipit ipsum architecto?
-              </p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper> */}
-    </div>
   );
 }
 
-// import React from 'react'
-
-// export default function TestinomalSlider() {
-//   return (
-//     <div className="reviews max-w-7xl mx-auto">
-//         <h1 className="md:text-4xl font-[700] text-primary-main">What our clients say about us</h1>
-//         <p className="md:text-xl font-[400] mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-//         <div className="grid grid-cols-3 gap-8 my-6 ">
-//   <div className="box1 h-[300px] w-full bg-secondary-main px-4 py-4 rounded-md">
-//     <h1 className="text-2xl text-white">John Doe</h1>
-//     <p className="text-sm text-[#e9e9e98a]">Bhopal, MP</p>
-//     <p className="text-lg mt-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores repellat eos quia aperiam soluta distinctio minima suscipit ipsum architecto?</p>
-//   </div>
-//           <div className="box1 h-[300px] w-full bg-secondary-main px-4 py-4 rounded-md">
-//             <h1 className="text-2xl text-white">John Doe</h1>
-//             <p className="text-sm text-[#e9e9e98a]">Mumbai, MH</p>
-//             <p className="text-lg mt-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores repellat eos quia aperiam soluta distinctio minima suscipit ipsum architecto?</p>
-//           </div>
-//           <div className="box1 h-[300px] w-full bg-secondary-main px-4 py-4 rounded-md">
-//             <h1 className="text-2xl text-white">John Doe</h1>
-//             <p className="text-sm text-[#e9e9e98a]">Surat, Gujarat</p>
-//             <p className="text-lg mt-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores repellat eos quia aperiam soluta distinctio minima suscipit ipsum architecto?</p>
-//           </div>
-
-//         </div>
-//       </div>
-//   )
-// }
