@@ -8,31 +8,31 @@ const Footer = () => {
     <footer className="w-full bg-gray-900">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     {/*Grid*/}
-    <div className="py-16 flex justify-between items-center flex-col gap-8 lg:flex-row">
+    <div className="md:py-16 sm:py-8 py-4 flex justify-between items-center flex-col gap-8 lg:flex-row">
       <Link href="#" className="flex justify-center text-white text-3xl">
        Logo
       </Link>
-      <ul className="text-lg text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500">
+      <ul className="lg:text-lg md:text-base text-sm text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500">
      
         <li className="sm:my-0 my-2">
-          <a href="javascript:;" className="text-white hover:text-primary-main">
+          <Link href="/" className="text-white hover:text-primary-main">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="javascript:;" className="text-white hover:text-primary-main">
+          <Link href="/" className="text-white hover:text-primary-main">
             Packages
-          </a>
+          </Link>
         </li>
         <li className="sm:my-0 my-2">
-          <a href="javascript:;" className="text-white hover:text-primary-main">
+          <Link href="/" className="text-white hover:text-primary-main">
             About Us
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="javascript:;" className="text-white hover:text-primary-main">
+          <Link href="/" className="text-white hover:text-primary-main">
             Contact Us
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="flex  space-x-4 sm:justify-center  ">
