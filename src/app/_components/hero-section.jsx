@@ -20,7 +20,7 @@ export default function HeroSection() {
   const arr = [
     {
       name: "",
-      img: "/assets/images/about-images/01.jpg",
+      img: "/assets/images/about-images/07.jpg",
       val1: "",
     },
     {
@@ -53,9 +53,9 @@ export default function HeroSection() {
           prevEl: `.HomeSlidePrev1`,
           nextEl: `.HomeSlideNext1`,
         }}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
         modules={[EffectFade, Navigation, Pagination]}
         className="mySwiper"
       >
@@ -70,7 +70,7 @@ export default function HeroSection() {
               <div className="flex items-center justify-center h-full bg-black bg-opacity-50 px-4 max-sm:p-6">
                 <div className="text-center text-white max-w-3xl mx-auto ">
                   <p
-                    className={`text-xs sm:text-base tracking-widest max-md:mt-10`}
+                    className={`text-xs sm:text-base tracking-widest max-md:mt-10 mb-4`}
                   >
                     COME TO EXPERIENCE IN TURIO
                   </p>

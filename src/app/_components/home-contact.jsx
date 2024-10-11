@@ -23,7 +23,7 @@ const HomeContact = () => {
       };
     
   return (
-    <div className="px-2 md:px-4 my-4 max-w-7xl mx-auto shadow-md bg-gray-800/10 rounded-lg" >
+    <div className="px-2 md:px-4 my-4 max-w-7xl mx-auto shadow shadow-primary-main bg-primary-main/10 rounded-lg" >
       <section className="md:p-6 sm:p-4 p-2">
         <div className="flex justify-center">
           <div className="text-center md:max-w-xl lg:max-w-3xl">

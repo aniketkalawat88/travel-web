@@ -3,41 +3,28 @@ import Image from 'next/image'
 import React from 'react'
 import TestinomalSlider from '../_components/testinomal-slider'
 import HomeAbout from '../_components/home-about'
+import PackageHero from '../_components/package-hero'
 
 const AboutUs = () => {
   return (
     <>
-      <div className="relative md:h-[40vw] sm:h-[60vw] h-[80vw] text-white overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/assets/images/about-images/about-main.avif"
-            alt="Background Image"
-            className="object-cover object-center w-full h-full"
-          />
-          <div className="absolute inset-0 bg-black/60" />
-        </div>
-        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-          <div className="font-medium text-center ">
-            <p className="text-primary-main text-[36px]">About Us</p>
-          </div>
-        </div>
-      </div>
+      <PackageHero name={"About Us"} />
       <HomeAbout />
-      <div className="flex items-center justify-evenly py-4 text-primary-main">
+      <div className="md:flex items-center justify-evenly py-4 text-primary-main">
         <div className="experience flex flex-col items-center">
-          <h1 className="text-[40px] font-[600]">10+</h1>
-          <p className="text-[32px] font-[400]">Years Experience</p>
+          <h1 className="md:text-[40px] text-2xl font-[600]">10+</h1>
+          <p className="md:text-[32px] sm:text-2xl text-xl font-[400]">Years Experience</p>
         </div>
         <div className="guide flex flex-col items-center">
-          <h1 className="text-[40px] font-[600]">100+</h1>
-          <p className="text-[32px] font-[400]">Tour Guide</p>
+          <h1 className="md:text-[40px] text-2xl font-[600]">100+</h1>
+          <p className="md:text-[32px] sm:text-2xl text-xl font-[400]">Tour Guide</p>
         </div>
         <div className="connect flex flex-col items-center">
-          <h1 className="text-[40px] font-[600]">500+</h1>
-          <p className="text-[32px] font-[400]">Traveler Connect</p>
+          <h1 className="md:text-[40px] text-2xl font-[600]">500+</h1>
+          <p className="md:text-[32px] sm:text-2xl text-xl font-[400]">Traveler Connect</p>
         </div>
       </div>
-      <div className="gallery h-[620px] py-6">
+      <div className="gallery md:h-[620px] h-96 py-6">
         <div className="line1 h-[32%] flex gap-2 py-1">
           <div className="photo1 h-full w-[22%]">
             <img className="object-cover object-center w-full h-full" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc1fHxuYXR1cmV8ZW58MHx8MHx8fDA%3D" alt="" />

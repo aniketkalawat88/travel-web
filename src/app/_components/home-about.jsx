@@ -14,18 +14,18 @@ const HomeAbout = () => {
                 <h1 className="md:text-3xl sm:text-2xl text-base font-bold tracking-tight text-gray-900 dark:text-black leading-9 dark:text-heading-main md:pb-4 pb-2">
                  <span className="text-black">About Us</span>
                 </h1>
-                <p className={`font-normal md:text-base text-xs md:leading-6 text-secondary-main dark:text-secondary-main`}>
+                <p className={`font-normal md:text-base text-xs md:leading-6 text-secondary-main dark:text-[#666666] `}>
                 {` Our in-house team of experts is dedicated to transforming your hotel business. With a strong background in Marketing and Advertising, and experience with international clients from the USA & UAE, we're ready to deliver exactly what Indian Hotels need to dominate the market. Unlike others, we customize packages and deals tailored to your property, ensuring it reaches new heights. Our committed support team handles bookings and calls seamlessly, while our talented design team creates stunning visuals and videos to showcase your property in the best light.`}
                 </p>
               <Link
                   href={'/about-us'}
-                  className="inline-block rounded text-primary-main  font-medium md:leading-normal bg-white border-primary-main border-2 hover:shadow-md hover:bg-primary-main hover:text-white w-fit px-10 mt-6 md:p-2 p-1 md:text-base sm:text-sm text-xs max-md:mx-auto"
+                  className=" rounded text-primary-main  font-medium md:leading-normal bg-white border-primary-main border-2 hover:shadow-md hover:bg-primary-main hover:text-white w-44 flex justify-center px-10 mt-6 md:p-2 p-1 md:text-base sm:text-sm text-xs max-md:mx-auto"
                 >
                   View More
                 </Link>
                 </div>
                 <div className="md:w-[80%] relative md:h-[22vw] h-[50vw]">
-                <Image src="/assets/images/about-images/about-main.avif" alt="A group of People" fill className="object-cover rounded-md" />
+                <Image src="/assets/images/about-images/08.jpg" alt="A group of People" fill className="object-cover rounded-md" />
                 </div>
             </div>
         </div>

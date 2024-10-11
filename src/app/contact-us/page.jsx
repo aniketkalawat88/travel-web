@@ -23,7 +23,7 @@ const page = () => {
 
             </div>
             <div className="">
-                <p className="md:text-[2.5rem] sm:text-2xl text-xl font-bold text-primary-main ">Contact Us</p>
+                <p className="md:text-[2.5rem] sm:text-2xl text-xl font-bold text-primary-main ">Connect with us</p>
                 <div className="flex md:gap-6 gap-4 mt-12">
                     <IoCall className="text-4xl bg-primary-main text-white p-2 rounded-lg" />
                     <div>
