@@ -20,7 +20,7 @@ export default function HeroSection() {
   const arr = [
     {
       name: "",
-      img: "/assets/images/about-images/07.jpg",
+      img: "/assets/images/about-images/09.jpg",
       val1: "",
     },
     {
