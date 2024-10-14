@@ -25,17 +25,17 @@ const HomeContact = () => {
     
   return (
     <div className="px-2 md:px-4 my-4 max-w-6xl flex mx-auto shadow shadow-primary-main bg-primary-main/10 rounded-lg" >
-      <section className="md:p-6 sm:p-4 p-2 w-[60%] ">
+      <section className="md:p-6 sm:p-4 p-2 md:w-[60%] max-md:w-full">
         <div className="flex justify-between">
           <div className=" md:max-w-xl lg:max-w-3xl">
             <h2 className="mb-2 md:text-3xl sm:text-2xl text-xl font-bold text-primary-main ">Contact Us</h2>
           </div>
         </div>
-          <p className="w-[80%] md:mb-8 text-[16px]">Have questions or want to book your next adventure in Pachmarhi? We’re here to help!</p>
+          <p className="md:w-[80%] md:mb-8 max-md:mb-4 md:text-[16px] max-md:text-[12px]">Have questions or want to book your next adventure in Pachmarhi? We’re here to help!</p>
         <div className="">
       
-        <form className="md:gap-6 sm:gap-4 gap-2 md:text-base text-sm">
-          <div className="grid grid-cols-2 w-full gap-2">
+        <form className="md:gap-6 sm:gap-4 max-md:gap-2  md:text-base text-sm">
+          <div className="md:grid  grid-cols-2 w-full gap-2">
           <div className="mb-3 w-full">
             <label className="block font-medium mb-[2px] text-primary-main" htmlFor="name">
               Name
@@ -43,9 +43,9 @@ const HomeContact = () => {
             <input
               type="text"
               name="name"
-              className="h-[40px] sm:p-2 p-1 border w-full outline-none rounded-md"
+              className="md:h-[40px] max-md:h-[30px] max-md:text-[14px] sm:p-2 p-1 border w-full outline-none rounded-md"
               id="name"
-              placeholder="Name"
+              placeholder="Enter your Name"
               value={formData.name}
               onChange={handleChange}
             />
@@ -57,7 +57,7 @@ const HomeContact = () => {
               <input
                 type="email"
                 name="email"
-                className="h-[40px] sm:p-2 p-1 border w-full outline-none rounded-md"
+                className="md:h-[40px] max-md:h-[30px] max-md:text-[14px] sm:p-2 p-1 border w-full outline-none rounded-md"
                 id="email"
                 placeholder="Enter your email address"
                 value={formData.email}
@@ -66,12 +66,12 @@ const HomeContact = () => {
             </div>
             <div className="mb-3 w-full">
               <label className="block font-medium mb-[2px] text-primary-main" htmlFor="number">
-                Number
+                Phone Number
               </label>
               <input
                 type="number"
                 name="number"
-                className="h-[40px] sm:p-2 p-1 border w-full outline-none rounded-md"
+                className="md:h-[40px] max-md:h-[30px] max-md:text-[14px] sm:p-2 p-1 border w-full outline-none rounded-md"
                 id="number"
                 placeholder="Enter your phone number"
                 value={formData.number}
@@ -85,7 +85,7 @@ const HomeContact = () => {
               <input
                 type="number"
                 name="number"
-                className="h-[40px] sm:p-2 p-1 border w-full outline-none rounded-md"
+                className="md:h-[40px] max-md:h-[30px] max-md:text-[14px] sm:p-2 p-1 border w-full outline-none rounded-md"
                 id="number"
                 placeholder="Enter your estimate date"
                 value={formData.date}
@@ -100,7 +100,7 @@ const HomeContact = () => {
             </label>
             <textarea
               name="message"
-              className="md:p-3 sm:p-2 p-1 border rounded-[5px] w-full outline-none resize-none md:h-20 sm:h-32 h-28 "
+              className="md:p-3 sm:p-2 p-1 border rounded-[5px] w-full outline-none resize-none md:h-20 max-md:h-14 sm:h-32 h-28 "
               placeholder="Enter your message"
               value={formData.message}
               onChange={handleChange}
@@ -119,7 +119,7 @@ const HomeContact = () => {
         </form>
         </div>
       </section>
-      <div className="w-[40%] flex justify-center items-center h-auto relative">
+      <div className="w-[40%] max-md:hidden flex justify-center items-center h-auto relative">
         <Image className="rounded-md object-cover p-4 " src="/assets/images/about-images/11.jpg" fill alt="" />
       </div>
     </div>

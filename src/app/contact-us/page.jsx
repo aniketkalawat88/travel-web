@@ -3,7 +3,7 @@ import HomeContact from '../_components/home-contact'
 import PackageHero from '../_components/package-hero'
 import { IoCall } from 'react-icons/io5'
 import { FaLocationDot } from 'react-icons/fa6'
-import { IoMdPricetags } from 'react-icons/io'
+import { IoMail } from "react-icons/io5";
 
 const page = () => {
   return (
@@ -24,26 +24,26 @@ const page = () => {
             </div>
             <div className="">
                 <p className="md:text-[2.5rem] sm:text-2xl text-xl font-bold text-primary-main mb-2">Connect with us</p>
-                <p className="text-[16px]">We look forward to guiding you through the beauty of Pachmarhi!</p>
-                <div className="flex md:gap-6 gap-4 mt-12">
+                <p className="md:text-[16px] max-md:text-[12px]">We look forward to guiding you through the beauty of Pachmarhi!</p>
+                <div className="flex md:gap-6 max-md:gap-4 md:mt-12 max-md:mt-6">
                     <IoCall className="text-4xl bg-primary-main text-white p-2 rounded-lg" />
                     <div>
-                        <p className="md:text-2xl sm:text-xl text-lg font-semibold">Phone</p>
-                        <p className="text-[#858587] mt-1.5">+91 94256 39221</p>
+                        <p className="md:text-2xl sm:text-xl max-md:text-lg font-semibold">Phone</p>
+                        <p className="text-[#858587] max-md:text-[14px] md:mt-1.5 max-md:mt-1">+91 94256 39221</p>
                     </div>
                 </div>
                 <div className="flex md:gap-6 gap-4 md:my-10 sm:my-8 my-6">
-                    <IoMdPricetags className="text-4xl bg-primary-main text-white p-2 rounded-lg" />
+                    <IoMail className="text-4xl bg-primary-main text-white p-2 rounded-lg" />
                     <div>
-                        <p className="md:text-2xl sm:text-xl text-lg font-semibold">Email</p>
-                        <p className="text-[#858587] mt-1.5">suhantoursandtravelspachmarhi@gmail.com</p>
+                        <p className="md:text-2xl sm:text-xl max-md:text-lg font-semibold">Email</p>
+                        <p className="text-[#858587] max-md:text-[14px] md:mt-1.5 max-md:mt-1">suhantoursandtravelspachmarhi@gmail.com</p>
                     </div>
                 </div>
                 <div className="flex md:gap-6 gap-4 md:my-10 sm:my-8 my-6">
-                    <FaLocationDot className="text-4xl bg-primary-main text-white p-2  rounded-lg max-md:w-16" />
+                    <FaLocationDot className="text-4xl  bg-primary-main text-white p-2  rounded-lg max-md:w-16" />
                     <div>
-                        <p className="md:text-2xl sm:text-xl text-lg font-semibold"> Location</p>
-                        <p className="text-[#858587] mt-1.5">Patel road ward no 02, Beside Khalsa Hotel, Pachmarhi, Madhya Pradesh  </p>
+                        <p className="md:text-2xl sm:text-xl max-md:text-lg font-semibold"> Location</p>
+                        <p className="text-[#858587] max-md:text-[14px] md:mt-1.5 max-md:mt-1">Patel road ward no 02, Beside Khalsa Hotel, Pachmarhi, Madhya Pradesh  </p>
                     </div>
                 </div>
             </div>
