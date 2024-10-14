@@ -129,8 +129,6 @@ const Packages = () => {
                 ))
             }
         </div>
-      ))}
-    </div>
   );
 };
 
