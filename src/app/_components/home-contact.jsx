@@ -118,7 +118,7 @@ const HomeContact = () => {
         </div>
       </section>
       <div className="w-[40%] flex justify-center items-center">
-        <img className="h-[90%] rounded-lg" src="/assets/images/about-images/08.jpg" alt="" />
+        <img className="h-[90%] rounded-lg" src="/assets/images/about-images/11.jpg" alt="" />
       </div>
     </div>
   );
