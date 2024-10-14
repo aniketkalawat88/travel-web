@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import React, { useState } from "react";
 import { IoCallSharp } from "react-icons/io5";
 
@@ -24,7 +25,7 @@ const HomeContact = () => {
     
   return (
     <div className="px-2 md:px-4 my-4 max-w-6xl flex mx-auto shadow shadow-primary-main bg-primary-main/10 rounded-lg" >
-      <section className="md:p-6 sm:p-4 p-2 w-[60%]">
+      <section className="md:p-6 sm:p-4 p-2 w-[60%] ">
         <div className="flex justify-between">
           <div className=" md:max-w-xl lg:max-w-3xl">
             <h2 className="mb-2 md:text-3xl sm:text-2xl text-xl font-bold text-primary-main ">Contact Us</h2>
@@ -118,8 +119,8 @@ const HomeContact = () => {
         </form>
         </div>
       </section>
-      <div className="w-[40%] flex justify-center items-center">
-        <img className="h-[90%] rounded-lg" src="/assets/images/about-images/11.jpg" alt="" />
+      <div className="w-[40%] flex justify-center items-center h-auto relative">
+        <Image className="rounded-md object-cover p-4 " src="/assets/images/about-images/11.jpg" fill alt="" />
       </div>
     </div>
   );
