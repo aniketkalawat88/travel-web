@@ -15,7 +15,7 @@ const HomeAbout = () => {
                  <span className="text-black">About Us</span>
                 </h1>
                 <p className={`font-normal md:text-base text-xs md:leading-6 text-secondary-main dark:text-[#666666] `}>
-                {`At Suhana Tours and Travels, we offer personalized tours that highlight the natural beauty and hidden gems of Pachmarhi. As locals, we bring in-depth knowledge and a passion for sustainable travel, ensuring every visitor experiences the best of Pachmarhi’s culture, nature, and adventure.`}
+                {`At Suhana Tours and Travels, we offer personalized tours that highlight the natural beauty and hidden gems of Pachmarhi. As locals, we bring in-depth knowledge and a passion for sustainable travel, ensuring every visitor experiences the best of Pachmarhi’s culture, nature, and hidden gems of Pachmarhi. As locals, we bring in-depth knowledge and a passion for sustainable travel, ensuring every visitor experiences the best of Pachmari hidden gems of Pachmarhi. As locals, we bring in-depth knowledge and a passion for sustainable travel, ensuring every visitor experiences the best of Pachmar adventure.`}
                 </p>
               {/* <Link
                   href={'/about-us'}
@@ -24,8 +24,8 @@ const HomeAbout = () => {
                   View More
                 </Link> */}
                 </div>
-                <div className="md:w-[80%] relative md:h-[15vw] h-[50vw]">
-                <Image src="/assets/images/about-images/08.jpg" alt="A group of People" fill className="object-cover rounded-md" />
+                <div className="md:w-[80%] relative md:h-[22vw] h-[50vw]">
+                <Image src="/assets/images/about-images/03.jpg" alt="A group of People" fill className="object-cover rounded-md" />
                 </div>
             </div>
         </div>

@@ -11,21 +11,21 @@ const HomePackage = () => {
         location:'',
         name:'',
         day:'5',
-        price:'6705'
+        price:'10,000'
       },
       {
         img:'/assets/images/about-images/05.jpg',
         location:'',
         name:'',
         day:'7',
-        price:'5000'
+        price:'13,000'
       },
       {
         img:'/assets/images/about-images/06.jpg',
         location:'',
         name:'',
         day:'4',
-        price:'2280'
+        price:'26,500'
       },
     ]
   return (
@@ -35,7 +35,7 @@ const HomePackage = () => {
           Our Popular Tour Packages
         </h2>       
       </div>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2  my-4">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6  my-4">
             {
                 arr.map((ele,i) => (
                 <div key={i} className="bg-white rounded-lg shadow-lg p-4 max-w-sm">
@@ -49,14 +49,15 @@ const HomePackage = () => {
                       <FaLocationDot className="mr-2"></FaLocationDot>
                       <span className="text-xs font-medium"> Pachmarhi</span>
                     </div>
-                    <h2 className="md:text-lg sm:text-base text-sm font-bold mb-2">
-                    Couple Friendly Budget package By  Suhana Tours and Travels For 2 pax
+                    <h2 className="md:text-lg sm:text-base text-sm font-semibold mb-2">
+                    Couple Friendly Budget package For 2 pax
                     </h2>
                     <p className="text-gray-500 mb-4 sm:text-base text-sm "> 3N/2D stay in Budget Non Ac Room</p>
-                    <p className="text-primary-main md:text-lg sm:text-base text-sm font-semibold mb-4">
-                    {ele.price}/<span className="text-sm"> Total package cost</span>   
-                    {/* <span className="text-gray-500 text-sm"> /</span> */}
-                    </p>
+                    <p className="flex items-start lg:col-span-1 pt-5 mb-4">
+                                        <p className="mt-2 text-lg leading-5 text-primary-main font-ttnorms text-left ">
+                                        <span className="text-[30px] font-700">{ele.price} /</span> Total package cost
+                                        </p>
+                                    </p>
                     <button className="bg-primary-main text-white md:py-2 py-1 md:px-4 md:rounded-lg rounded-sm w-full md:text-base sm:text-sm text-xs">
                     Book Now
                     </button>
@@ -71,7 +72,7 @@ const HomePackage = () => {
         href={'/packages'}
           className="inline-block rounded text-primary-main md:text-base sm:text-sm text-xs font-medium md:leading-normal bg-white border-primary-main border-2 hover:shadow-md hover:bg-primary-main hover:text-white w-fit md:px-10 md:mt-6 p-2"
         >
-          View More
+          All Packages
         </Link>
       </div>
     </div>
