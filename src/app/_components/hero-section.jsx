@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { londrinasketch } from "../font";
+import FormPopup from "./form-popup";
 
 const HeroSection = () => {
   return (
@@ -35,12 +36,13 @@ const HeroSection = () => {
             <p className="text-sm sm:text-sm mb-6 max-w-2xl mx-auto ">
              {`    Suhana Tours and Travels offers personalized tours in Pachmarhi, showcasing its stunning nature, rich culture, and hidden gems for unforgettable adventures.`}
             </p>
-            <Link
+            {/* <Link
               href="#"
               className="bg-primary-main text-white py-2 sm:py-3 px-4 sm:px-6 rounded-sm text-sm hover:bg-primary-main transition duration-300 font-medium"
             >
               Explore Now
-            </Link>
+            </Link> */}
+            <FormPopup />
           </div>
         </div>
     </div>
