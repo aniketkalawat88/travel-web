@@ -29,7 +29,7 @@ const HomePackage = () => {
       },
     ]
   return (
-    <div className="max-w-7xl mx-auto xl:p-0 p-6">
+    <div className="max-w-6xl mx-auto xl:p-0 p-6">
       <div className="mt-10 flex justify-between items-center">
         <h2 className="md:text-3xl sm:text-2xl text-base font-bold tracking-tight text-gray-900 dark:text-black">
           Our Popular Tour Packages

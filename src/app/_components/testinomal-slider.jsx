@@ -46,11 +46,11 @@ export default function HeroSection() {
     },
   ]
   return (
-     <div id="review" className="relative w-full h-full max-w-7xl mx-auto md:py-10 py-6  xl:px-10 px-6 bg-[#FEFCFB]">
+     <div id="review" className="relative w-full h-full max-w-6xl mx-auto md:py-10 py-6  xl:px-10 px-6 bg-[#FEFCFB]">
     <div className="grid md:grid-cols-2 grid-cols-1 w-full h-full">
         <div>
         <div>
-            <h1 className={`xl:text-5xl md:text-3xl text-2xl font-bold max-md:text-center`}>Testimonial<span className="text-primary-main pt-2 text-4xl"><br />  </span></h1>
+            <h1 className={`md:text-3xl sm:text-2xl text-base font-bold tracking-tight text-gray-900 dark:text-black leading-9 dark:text-heading-main`}>Testimonial<span className="text-primary-main pt-2 text-4xl"><br />  </span></h1>
             <p className="text-[#666666] max-w-sm mt-6">Our Clients send us bunch of smilies with our services and we love them.</p>
             <div>
               <button className='HomeSlidePrev text-primaryMain absolute bottom-12 max-md:left-1/3 -translate-y-1/2 z-10 hover:bg-primary-main hover:text-white text-xl p-2 rounded-full border border-primary-main text-primary-main'><FaArrowLeft /></button>
