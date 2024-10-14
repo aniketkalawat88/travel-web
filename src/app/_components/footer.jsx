@@ -1,71 +1,86 @@
-import Link from 'next/link'
 import React from 'react'
 import { FaInstagram, FaYoutube } from 'react-icons/fa6'
 import { CiFacebook } from "react-icons/ci";
+import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-900">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    {/*Grid*/}
-    <div className="md:py-16 sm:py-8 py-4 flex justify-between items-center flex-col gap-8 lg:flex-row">
-      <Link href="#" className="flex justify-center text-white text-3xl">
-       Logo
-      </Link>
-      <ul className="lg:text-lg md:text-base text-sm text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500">
-     
-        <li className="sm:my-0 my-2">
-          <Link href="/" className="text-white hover:text-primary-main">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href="/" className="text-white hover:text-primary-main">
-            Packages
-          </Link>
-        </li>
-        <li className="sm:my-0 my-2">
-          <Link href="/" className="text-white hover:text-primary-main">
-            About Us
-          </Link>
-        </li>
-        <li>
-          <Link href="/" className="text-white hover:text-primary-main">
-            Contact Us
-          </Link>
-        </li>
-      </ul>
-      <div className="flex  space-x-4 sm:justify-center  ">
+    <footer className="w-full bg-primary-main/20 border-t-2 border-primary-main">
+  <div className=" px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto ">
+    <div className="py-2 grid grid-cols-7 gap-x-5 gap-y-8 ">
+      <div className="col-span-full lg:col-span-3 relative text-gray-800 rounded-2xl gap-12 p-6 lg:w-72 h-96 flex flex-col justify-center items-center">
         <Link
-          href=""
-          className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-primary-main"
+          href="/"
+          className="flex justify-center lg:justify-start text-gray-900 text-2xl"
         >
-          <FaInstagram className='text-white text-xl' />
+          Logo
         </Link>
-        <Link
-          href=""
-          className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-primary-main"
-        >
-         <CiFacebook className='text-white text-xl' />
-        </Link>
-        <Link
-          href=""
-          className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-primary-main"
-        >
-         <FaYoutube className='text-white text-xl' />
-        </Link>
+        <p className="text-center text-gray-600 font-medium">
+          Trusted in more than 100 countries &amp; 5 million customers. Have any
+          query? contact us we are here for you.
+        </p>
+        <div className="flex  space-x-4 sm:justify-center">
+          <Link
+            href=""
+            className="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md"
+          >
+          <FaInstagram />
+          </Link>
+          <Link
+            href=""
+            className="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md"
+          >
+          <FaYoutube />
+          </Link>
+          <Link
+            href=""
+            className="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md"
+          >
+            <CiFacebook />
+          </Link>
+        </div>
       </div>
-    </div>
-    {/*Grid*/}
-    <div className="py-7 border-t border-gray-700">
-      <div className="flex items-center justify-center">
-        <span className="text-gray-400 ">
-          ©2024, All rights reserved.
-        </span>
+      <div className="block lg:py-16 col-span-full min-[500px]:col-span-6 md:col-span-2 lg:col-span-2">
+        <h4 className="text-lg text-primary-main font-bold mb-9 text-center lg:text-left">
+          Quick Links
+        </h4>
+        <div className="flex gap-6 lg:gap-12 max-lg:justify-center">
+          <ul className="text-gray-600 transition-all duration-500 grid gap-6 text-lg font-medium">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/packages">Packages</Link>
+            </li>
+            <li>
+              <Link href="/about-us">About Us</Link>
+            </li>
+            <li>
+              <Link href="/contact-us">Contact Us</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="block text-center lg:text-left lg:py-16 col-span-full min-[500px]:col-span-6 md:col-span-2 lg:col-span-2 lg:pl-5">
+        <h4 className="text-lg text-primary-main font-bold mb-9">Get In Touch</h4>
+        <ul className="text-gray-600 transition-all duration-500 grid gap-6  text-lg font-medium">
+          <li>suhantoursandtravelspachmarhi@gmail.com</li>
+          <li>+91 945 658 3256</li>
+          <li>Patel road ward no 02, Beside Khalsa Hotel, Pachmarhi, Madhya Pradesh</li>
+        </ul>
       </div>
     </div>
   </div>
+  <div className="py-4 bg-primary-main">
+    <div className="flex items-center justify-center">
+      <span className="text-sm text-white ">
+        Copyright@2024 All Right Reserved by{" "}
+        <a href="/">IgrowMyBiz</a>
+      </span>
+    </div>
+  </div>
 </footer>
+
 
   )
 }
