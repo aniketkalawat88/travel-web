@@ -52,15 +52,21 @@ const HomePackage = () => {
                     <h2 className="md:text-lg sm:text-base text-sm font-semibold mb-2">
                     Couple Friendly Budget package For 2 pax
                     </h2>
-                    <p className="text-gray-500 mb-4 sm:text-base text-sm "> 3N/2D stay in Budget Non Ac Room</p>
-                    <p className="flex items-start lg:col-span-1 pt-5 mb-4">
-                                        <p className="mt-2 text-lg leading-5 text-primary-main font-ttnorms text-left ">
-                                        <span className="text-[30px] font-700">{ele.price} /</span> Total package cost
-                                        </p>
-                                    </p>
-                    <button className="bg-primary-main text-white md:py-2 py-1 md:px-4 md:rounded-lg rounded-sm w-full md:text-base sm:text-sm text-xs">
-                    Book Now
-                    </button>
+                    <div className="text-gray-500 mb-4 sm:text-base text-sm "> 3N/2D stay in Budget Non Ac Room</div>
+                    <div className="flex items-start lg:col-span-1 pt-5 mb-4">
+                        <p className="mt-2 text-lg leading-5 text-primary-main font-ttnorms text-left ">
+                        <span className="text-[30px] font-700">{ele.price} /</span> Total package cost
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      <button className="bg-primary-main text-white md:py-2 py-1 md:px-4 md:rounded-lg rounded-sm w-full md:text-base sm:text-sm text-xs">
+                      Book Now
+                      </button>
+                      <button className="text-primary-main border-primary-main border md:py-2 py-1 md:px-4 md:rounded-lg rounded-sm w-full md:text-base sm:text-sm text-xs">
+                      Call Now
+                      </button>
+
+                    </div>
                 </div>
                 </div>
 
