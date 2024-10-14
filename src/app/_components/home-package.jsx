@@ -11,7 +11,7 @@ const HomePackage = () => {
         location:'',
         name:'',
         day:'5',
-        price:'6.705.000'
+        price:'6705'
       },
       {
         img:'/assets/images/about-images/05.jpg',
@@ -54,7 +54,7 @@ const HomePackage = () => {
                     </h2>
                     <p className="text-gray-500 mb-4 sm:text-base text-sm "> 3N/2D stay in Budget Non Ac Room</p>
                     <p className="text-primary-main md:text-lg sm:text-base text-sm font-semibold mb-4">
-                    Total package cost =  {ele.price}  
+                    {ele.price}/<span className="text-sm"> Total package cost</span>   
                     {/* <span className="text-gray-500 text-sm"> /</span> */}
                     </p>
                     <button className="bg-primary-main text-white md:py-2 py-1 md:px-4 md:rounded-lg rounded-sm w-full md:text-base sm:text-sm text-xs">

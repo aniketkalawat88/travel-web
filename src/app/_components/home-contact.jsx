@@ -34,6 +34,7 @@ const HomeContact = () => {
         <div className="">
       
         <form className="md:gap-6 sm:gap-4 gap-2 md:text-base text-sm">
+          <div className="grid grid-cols-2 w-full gap-2">
           <div className="mb-3 w-full">
             <label className="block font-medium mb-[2px] text-primary-main" htmlFor="name">
               Name
@@ -48,49 +49,49 @@ const HomeContact = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="grid grid-cols-2 w-full gap-2">
-          <div className="mb-3 w-full">
-            <label className="block font-medium mb-[2px] text-primary-main" htmlFor="email">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              className="h-[40px] sm:p-2 p-1 border w-full outline-none rounded-md"
-              id="email"
-              placeholder="Enter your email address"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="mb-3 w-full">
-            <label className="block font-medium mb-[2px] text-primary-main" htmlFor="number">
-              Number
-            </label>
-            <input
-              type="number"
-              name="number"
-              className="h-[40px] sm:p-2 p-1 border w-full outline-none rounded-md"
-              id="number"
-              placeholder="Enter your phone number"
-              value={formData.number}
-              onChange={handleChange}
-            />
-          </div>
-          </div>
-          <div className="mb-3 w-full">
-            <label className="block font-medium mb-[2px] text-primary-main" htmlFor="number">
-              Date
-            </label>
-            <input
-              type="number"
-              name="number"
-              className="h-[40px] sm:p-2 p-1 border w-full outline-none rounded-md"
-              id="number"
-              placeholder="Enter your estimate date"
-              value={formData.date}
-              onChange={handleChange}
-            />
+            <div className="mb-3 w-full">
+              <label className="block font-medium mb-[2px] text-primary-main" htmlFor="email">
+                Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                className="h-[40px] sm:p-2 p-1 border w-full outline-none rounded-md"
+                id="email"
+                placeholder="Enter your email address"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="mb-3 w-full">
+              <label className="block font-medium mb-[2px] text-primary-main" htmlFor="number">
+                Number
+              </label>
+              <input
+                type="number"
+                name="number"
+                className="h-[40px] sm:p-2 p-1 border w-full outline-none rounded-md"
+                id="number"
+                placeholder="Enter your phone number"
+                value={formData.number}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="mb-3 w-full">
+              <label className="block font-medium mb-[2px] text-primary-main" htmlFor="number">
+                Date
+              </label>
+              <input
+                type="number"
+                name="number"
+                className="h-[40px] sm:p-2 p-1 border w-full outline-none rounded-md"
+                id="number"
+                placeholder="Enter your estimate date"
+                value={formData.date}
+                onChange={handleChange}
+              />
+            </div>
+          
           </div>
           <div className="mb-3 w-full md:col-span-3">
             <label className="block font-medium mb-[2px] text-primary-main" htmlFor="message">

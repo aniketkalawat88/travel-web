@@ -24,7 +24,7 @@ const HomeAbout = () => {
                   View More
                 </Link> */}
                 </div>
-                <div className="md:w-[80%] relative md:h-[22vw] h-[50vw]">
+                <div className="md:w-[80%] relative md:h-[15vw] h-[50vw]">
                 <Image src="/assets/images/about-images/08.jpg" alt="A group of People" fill className="object-cover rounded-md" />
                 </div>
             </div>
