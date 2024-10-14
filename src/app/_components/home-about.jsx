@@ -11,10 +11,10 @@ const HomeAbout = () => {
         <div className="max-w-6xl mx-auto xl:p-0 p-6">
             <div className="flex flex-col-reverse lg:flex-row justify-between md:gap-8 sm:gap-6 gap-4 shadow-[0px_8px_16px_0px_rgba(0,0,0,0.16)] md:p-6 p-4 md:my-14 sm:my-6 my-4 rounded-md bg-white">
                 <div className="w-full flex flex-col justify-center">
-                <h1 className="md:text-3xl sm:text-2xl text-base font-bold tracking-tight text-gray-900 dark:text-black leading-9 dark:text-heading-main md:pb-4 pb-2">
+                <h1 className="md:text-3xl sm:text-2xl text-base font-bold tracking-tight text-gray-900 dark:text-black leading-9 dark:text-heading-main md:pb-4 max-md:pb-2 max-md:text-center">
                  <span className="text-black">About Us</span>
                 </h1>
-                <p className={`font-normal md:text-base text-xs md:leading-6 text-secondary-main dark:text-[#666666] `}>
+                <p className={`font-normal md:text-base text-xs md:leading-6 text-secondary-main dark:text-[#666666] max-md:text-justify`}>
                 {`At Suhana Tours and Travels, we offer personalized tours that highlight the natural beauty and hidden gems of Pachmarhi. As locals, we bring in-depth knowledge and a passion for sustainable travel, ensuring every visitor experiences the best of Pachmarhi’s culture, nature, and hidden gems of Pachmarhi. As locals, we bring in-depth knowledge and a passion for sustainable travel, ensuring every visitor experiences the best of Pachmari hidden gems of Pachmarhi. As locals, we bring in-depth knowledge and a passion for sustainable travel, ensuring every visitor experiences the best of Pachmar adventure.`}
                 </p>
               {/* <Link

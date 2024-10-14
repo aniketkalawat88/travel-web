@@ -10,22 +10,22 @@ const AboutUs = () => {
     <>
       <PackageHero name={"About Us"} />
       <HomeAbout />
-      <div className="md:flex items-center justify-evenly py-4 text-primary-main">
+      <div className="flex items-center justify-evenly md:py-4 text-primary-main">
         <div className="experience flex flex-col items-center">
-          <h1 className="md:text-[40px] text-2xl font-[600]">10+</h1>
-          <p className="md:text-[32px] sm:text-2xl text-xl font-[400]">Years Experience</p>
+          <h1 className="md:text-[40px] md:text-2xl max-md:text-lg font-[600]">10+</h1>
+          <p className="md:text-[32px] sm:text-2xl md:text-xl max-md:text-sm font-[400]">Years Experience</p>
         </div>
         <div className="guide flex flex-col items-center">
-          <h1 className="md:text-[40px] text-2xl font-[600]">100+</h1>
-          <p className="md:text-[32px] sm:text-2xl text-xl font-[400]">Tour Guide</p>
+          <h1 className="md:text-[40px] md:text-2xl max-md:text-lg font-[600]">100+</h1>
+          <p className="md:text-[32px] sm:text-2xl md:text-xl max-md:text-sm font-[400]">Tour Guide</p>
         </div>
         <div className="connect flex flex-col items-center">
-          <h1 className="md:text-[40px] text-2xl font-[600]">500+</h1>
-          <p className="md:text-[32px] sm:text-2xl text-xl font-[400]">Traveler Connect</p>
+          <h1 className="md:text-[40px] md:text-2xl max-md:text-lg font-[600]">500+</h1>
+          <p className="md:text-[32px] sm:text-2xl md:text-xl max-md:text-sm font-[400]">Traveler Connect</p>
         </div>
       </div>
       <div className="gallery md:h-[620px] h-96 py-6">
-        <div className="line1 h-[32%] flex gap-2 py-1">
+        <div className="line1 h-[32%] flex md:gap-2 max-md:gap-1 md:py-1 max-md:py-[2px]">
           <div className="photo1 h-full w-[22%]">
             <img className="object-cover object-center w-full h-full" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc1fHxuYXR1cmV8ZW58MHx8MHx8fDA%3D" alt="" />
           </div>
@@ -39,7 +39,7 @@ const AboutUs = () => {
             <img className="object-cover object-center w-full h-full" src="https://plus.unsplash.com/premium_photo-1666863910470-c5906f963cb4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYxfHxuYXR1cmV8ZW58MHx8MHx8fDA%3D" alt="" />
           </div>
         </div>
-        <div className="line2 h-[32%] flex gap-2 py-1">
+        <div className="line2 h-[32%] flex md:gap-2 max-md:gap-1 md:py-1 max-md:py-[2px]">
           <div className="photo1 h-full w-[28%]">
             <img className="object-cover object-center w-full h-full" src="https://plus.unsplash.com/premium_photo-1673697239633-5f5b91092bd8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA5fHxuYXR1cmV8ZW58MHx8MHx8fDA%3D" alt="" />
           </div>
@@ -53,7 +53,7 @@ const AboutUs = () => {
             <img className="object-cover object-center w-full h-full" src="https://images.unsplash.com/photo-1535961652354-923cb08225a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMxfHxuYXR1cmV8ZW58MHx8MHx8fDA%3D" alt="" />
           </div>
         </div>
-        <div className="line3 h-[32%] flex gap-2 py-1">
+        <div className="line3 h-[32%] flex md:gap-2 max-md:gap-1 md:py-1 max-md:py-[2px]">
           <div className="photo1 h-full w-[20%]">
             <img className="object-cover object-center w-full h-full" src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI2fHxuYXR1cmV8ZW58MHx8MHx8fDA%3D" alt="" />
           </div>
