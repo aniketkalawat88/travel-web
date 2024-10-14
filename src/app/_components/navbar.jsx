@@ -34,14 +34,12 @@ const Navbar = () => {
       href="/"
       className="flex items-center space-x-3 rtl:space-x-reverse"
     >
-      {/* <img
-        src="https://flowbite.com/docs/images/logo.svg"
+      <img
+        src="/assets/images/about-images/logo.png"
         className="h-8"
         alt="Flowbite Logo"
-      /> */}
-      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-primary-main">
-        Logo
-      </span>
+      />
+    
     </Link>
     {/* <button
       data-collapse-toggle="navbar-default"
