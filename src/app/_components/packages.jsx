@@ -129,7 +129,9 @@ const Packages = () => {
                 ))
             }
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
 
-export default Packages
+export default Packages;
