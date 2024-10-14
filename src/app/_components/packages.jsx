@@ -3,9 +3,42 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Packages = () => {
     const pack = [
-        "",
-        "",
-        ""
+        {
+            img:'/assets/images/about-images/04.jpg',
+            name:'',
+            price:'10,000',
+            data:[
+                "",
+                "",
+            ]
+        },
+        {
+            img:'/assets/images/about-images/05.jpg',
+            name:'',
+            price:'13,000',
+            data:[
+                "",
+                "",
+            ]
+        },
+        {
+            img:'/assets/images/about-images/06.jpg',
+            name:'',
+            price:'26,500',
+            data:[
+                "",
+                "",
+            ]
+        },
+        {
+            img:'/assets/images/about-images/07.jpg',
+            name:'',
+            price:'46200',
+            data:[
+                "",
+                "",
+            ]
+        },
     ]
     return (
         <div className='max-w-6xl mx-auto space-y-16 my-10'>
@@ -14,7 +47,7 @@ const Packages = () => {
 
                     <div key={i} className="h-[440px] overflow-hidden lg:max-w-none lg:flex  shadow-teal  bg-white rounded-lg shadow-lg">
                         <div className="w-[50%] flex items-center justify-center py-3">
-                        <img className="w-[90%] h-full object-cover rounded-lg" src="/assets/images/about-images/03.jpg" alt="" />
+                        <img className="w-[90%] h-full object-cover rounded-lg" src={ele.img} alt="" />
                         </div>
                         <div className="bg-white w-[60%] px-6 lg:flex-shrink-1">
                         <div className="flex items-center text-primary-main my-2">
@@ -102,7 +135,7 @@ const Packages = () => {
                                     </li>
                                     <li className="flex items-start lg:col-span-1 pt-5">
                                         <p className="mt-4 text-lg leading-5 text-primary-main font-ttnorms text-left ">
-                                        <span className="text-[30px] font-700">10,000.00 /</span> Total package cost
+                                        <span className="text-[30px] font-700">{ele.price} /</span> Total package cost
                                         </p>
                                     </li>
                                     
