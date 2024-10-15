@@ -1,9 +1,17 @@
+"use client"
+
 import React from "react";
-import Link from "next/link";
 import { londrinasketch } from "../font";
+import { useDispatch } from "react-redux";
+import { openModal } from "../redux/modelSlice/modelSlice";
 import FormPopup from "./form-popup";
 
 const HeroSection = () => {
+  const dispatch = useDispatch();
+  const handleOpen = () => (
+    dispatch(openModal())
+  )
+
   return (
     <div className="relative">
       <video className="custom-video max-md:h-[300px]" loop playsInline muted autoPlay>
@@ -36,13 +44,10 @@ const HeroSection = () => {
             <p className="md:text-sm sm:text-sm mb-6 max-w-2xl mx-auto max-md:mt-4 max-md:hidden">
              {`    Suhana Tours and Travels offers personalized tours in Pachmarhi, showcasing its stunning nature, rich culture, and hidden gems for unforgettable adventures.`}
             </p>
-            {/* <Link
-              href="#"
-              className="bg-primary-main text-white py-2 sm:py-3 px-4 sm:px-6 rounded-sm text-sm hover:bg-primary-main transition duration-300 font-medium"
+              <button onClick={handleOpen} className="bg-primary-main text-white py-2 sm:py-3 px-4 sm:px-6 rounded-sm text-sm hover:bg-primary-main transition duration-300 font-medium"
             >
               Explore Now
-            </Link> */}
-            <FormPopup />
+            </button>
           </div>
         </div>
     </div>

@@ -1,10 +1,18 @@
+"use client"
+
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
+import { useDispatch } from "react-redux";
+import { openModal } from "../redux/modelSlice/modelSlice";
 
 
 const HomePackage = () => {
+  const dispatch = useDispatch();
+  const handleOpen = () => (
+    dispatch(openModal())
+  )
     const arr = [
       {
         img:'/assets/images/about-images/04.jpg',
@@ -59,7 +67,7 @@ const HomePackage = () => {
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
-                      <button className="bg-primary-main text-white md:py-2 max-md:py-2 px-4 md:rounded-lg rounded-sm w-full md:text-base sm:text-sm text-xs">
+                      <button onClick={handleOpen} className="bg-primary-main text-white md:py-2 py-1 md:px-4 md:rounded-lg rounded-sm w-full md:text-base sm:text-sm text-xs">
                       Book Now
                       </button>
                       <button className="text-primary-main border-primary-main border md:py-2 max-md:py-2 md:px-4 md:rounded-lg rounded-sm w-full md:text-base sm:text-sm text-xs">
