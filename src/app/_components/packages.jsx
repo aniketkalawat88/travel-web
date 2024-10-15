@@ -51,7 +51,7 @@ const Packages = () => {
         },
     ]
     return (
-        <div className='max-w-6xl mx-auto space-y-16 md:my-10 max-md:my-5'>
+        <div className='max-w-6xl mx-auto md:space-y-16 max-md:space-y-4 md:my-10 max-md:my-8'>
             {
                 pack.map((ele, i) => (
 
