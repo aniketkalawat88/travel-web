@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { FaInstagram, FaYoutube } from 'react-icons/fa6'
 import { CiFacebook } from "react-icons/ci";
@@ -9,11 +10,16 @@ const Footer = () => {
       <div className="sm:px-6 md:px-8 w-[90%] mx-auto ">
         <div className="grid md:grid-cols-12 md:justify-items-center md:gap-x-5 md:gap-y-8">
           <div className="col-span-full lg:col-span-4 relative text-gray-800  md:gap-6 max-md:gap-3 md:p-6 lg:w-72 md:h-72 max-md:py-6 flex flex-col justify-center ">
-            <Link
+          <Link
               href="/"
-              className="flex md:justify-start text-gray-900 text-2xl max-md:justify-center"
+              className="flex items-center justify-center space-x-3 rtl:space-x-reverse pr-32"
             >
-              Logo
+              <img
+                src="/assets/images/about-images/logo.png"
+                className="h-10 scale-[3]"
+                alt="Flowbite Logo"
+              />
+            
             </Link>
             <p className="text-left text-gray-600 text-base font-medium max-md:text-center">
               Trusted in more than 100 countries &amp; 5 million customers. Have a
