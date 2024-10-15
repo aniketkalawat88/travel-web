@@ -61,9 +61,9 @@ const HomePackage = () => {
                     Couple Friendly Budget package For 2 pax
                     </h2>
                     <div className="text-gray-500 md:mb-4 max-md:mb-2 sm:text-base text-sm"> 3N/2D stay in Budget Non Ac Room</div>
-                    <div className="flex items-start lg:col-span-1 md:pt-5 mb-4">
+                    <div className="flex items-start lg:col-span-1 md:pt-1 mb-4">
                         <p className="mt-2 md:text-lg max-md:text-md leading-5 text-primary-main font-ttnorms text-left ">
-                        <span className="md:text-[30px] max-md:text-[20px] font-700">{ele.price} /</span> Total package cost
+                        <span className="md:text-[24px] max-md:text-[20px] font-700">{ele.price} /</span> Total package cost
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-4">

@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 
-const PackageHero = ({name}) => {
+const PackageHero = ({name , img}) => {
   return (
     <div className="relative md:h-[30vw] sm:h-[60vw] h-[80vw] text-white overflow-hidden">
     <div className="absolute inset-0">
       <img
-        src="/assets/images/about-images/morskie-oko-tatry.jpg"
+        src={img}
         alt="Background Image"
         className="object-cover object-center w-full h-full"
       />

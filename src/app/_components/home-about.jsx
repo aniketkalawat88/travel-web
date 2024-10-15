@@ -25,7 +25,7 @@ const HomeAbout = () => {
                 </Link> */}
                 </div>
                 <div className="md:w-[80%] relative md:h-[22vw] h-[50vw]">
-                <Image src="/assets/images/about-images/03.jpg" alt="A group of People" fill className="object-cover rounded-md" />
+                <Image src="/assets/images/about-images/21.jpg" alt="A group of People" fill className="object-cover rounded-md" />
                 </div>
             </div>
         </div>

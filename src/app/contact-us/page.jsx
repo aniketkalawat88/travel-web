@@ -8,7 +8,7 @@ import { IoMail } from "react-icons/io5";
 const page = () => {
   return (
     <div>
-         <PackageHero name={"Contact Us"} />
+         <PackageHero name={"Contact Us"}  img={"/assets/images/about-images/13.jpg"} />
         <HomeContact />
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 sm:gap-6 gap-4 my-10 max-w-6xl mx-auto xl:px-0 px-6">
         <div className="rounded-lg overflow-hidden">

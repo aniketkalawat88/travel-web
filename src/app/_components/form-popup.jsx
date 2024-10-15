@@ -95,7 +95,7 @@ export default function FormPopup() {
                 </button>
               </div>
               <h2 className="text-3xl font-bold mb-4 text-primary-main px-4 text-center">Contact Us</h2>
-              <form onSubmit={handleSubmit} className='grid grid-cols-2 gap-3 text-start  p-6'>
+              <form onSubmit={handleSubmit} className='grid md:grid-cols-2 gap-3 text-start  p-6'>
                 <div className="mb-4">
                   <label
                     htmlFor="name"
@@ -109,6 +109,7 @@ export default function FormPopup() {
                     name="name"
                     value={isData.name}
                     onChange={handleChange}
+                    placeholder='Please Enter Your Name'
                     className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
                     required
                   />
@@ -126,6 +127,7 @@ export default function FormPopup() {
                     name="email"
                     value={isData.email}
                     onChange={handleChange}
+                    placeholder='Please Enter Your Email'
                     className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
                     required
                   />
@@ -143,6 +145,7 @@ export default function FormPopup() {
                     name="number"
                     value={isData.number}
                     onChange={handleChange}
+                    placeholder='Please Enter Your Number'
                     className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
                     required
                   />
@@ -160,6 +163,7 @@ export default function FormPopup() {
                     name="date"
                     value={isData.date}
                     onChange={handleChange}
+                    placeholder='Please Enter Your Date'
                     className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
                     required
                   />
@@ -176,6 +180,7 @@ export default function FormPopup() {
                     name="message"
                     value={isData.message}
                     onChange={handleChange}
+                    placeholder='Please Enter Your Message'
                     className="w-full p-2 border rounded-md focus:outline-none text-black bg-white resize-none h-32"
                     required
                   />

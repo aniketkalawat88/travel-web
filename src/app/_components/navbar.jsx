@@ -35,7 +35,7 @@ const Navbar = () => {
       className="flex items-center space-x-3 rtl:space-x-reverse"
     >
       <img
-        src="/assets/images/about-images/logo-white.png"
+        src="/assets/images/about-images/logo.png"
         className="h-10 md:scale-[3] scale-150"
         alt="Flowbite Logo"
       />
