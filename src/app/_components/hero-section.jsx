@@ -6,7 +6,7 @@ import FormPopup from "./form-popup";
 const HeroSection = () => {
   return (
     <div className="relative">
-      <video className="custom-video" loop playsInline muted autoPlay>
+      <video className="custom-video max-md:h-[300px]" loop playsInline muted autoPlay>
         <source src="/video1.mp4" type="video/mp4" />
         <track
           src="/video1.mp4"
@@ -21,19 +21,19 @@ const HeroSection = () => {
         <div className="flex items-center justify-center h-full absolute w-full top-0 px-4">
           <div className="text-center text-white max-w-3xl mx-auto ">
           <p
-                    className={`text-xs sm:text-base tracking-widest max-md:mt-10 mb-4`}
+                    className={`text-xs sm:text-base tracking-widest max-md:mt-10 md:mb-4 max-md:mb-2`}
                   >
                     Pachmarhi ke Maze, Bas Tumhare Liye
                   </p>
-                  <h1 className="xl:text-[3rem] lg:text-5xl sm:text-2xl text-base font-bold text-primary-main uppercase">
+                  <h1 className="xl:text-[3rem] lg:text-5xl max-md:text-xl sm:text-2xl text-base font-bold text-primary-main uppercase">
                   Discover the Magic of
                   </h1>
                   <h2
-                    className={`xl:text-[5rem] lg:text-5xl sm:text-2xl text-base font-bold md:mb-4 mb-2 uppercase ${londrinasketch.className}`}
+                    className={`xl:text-[5rem] lg:text-5xl max-md:text-4xl sm:text-2xl text-base font-bold md:mb-4  uppercase ${londrinasketch.className}`}
                   >
                     {`Pachmarhi`}
                   </h2>
-            <p className="text-sm sm:text-sm mb-6 max-w-2xl mx-auto ">
+            <p className="md:text-sm sm:text-sm mb-6 max-w-2xl mx-auto max-md:mt-4 max-md:hidden">
              {`    Suhana Tours and Travels offers personalized tours in Pachmarhi, showcasing its stunning nature, rich culture, and hidden gems for unforgettable adventures.`}
             </p>
             {/* <Link
