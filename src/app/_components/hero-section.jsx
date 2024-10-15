@@ -1,9 +1,17 @@
+"use client"
+
 import React from "react";
-import Link from "next/link";
 import { londrinasketch } from "../font";
+import { useDispatch } from "react-redux";
+import { openModal } from "../redux/modelSlice/modelSlice";
 import FormPopup from "./form-popup";
 
 const HeroSection = () => {
+  const dispatch = useDispatch();
+  const handleOpen = () => (
+    dispatch(openModal())
+  )
+
   return (
     <div className="relative">
       <video className="custom-video" loop playsInline muted autoPlay>
@@ -21,28 +29,25 @@ const HeroSection = () => {
         <div className="flex items-center justify-center h-full absolute w-full top-0 px-4">
           <div className="text-center text-white max-w-3xl mx-auto ">
           <p
-                    className={`text-xs sm:text-base tracking-widest max-md:mt-10 mb-4`}
-                  >
-                    Pachmarhi ke Maze, Bas Tumhare Liye
-                  </p>
-                  <h1 className="xl:text-[3rem] lg:text-5xl sm:text-2xl text-base font-bold text-primary-main uppercase">
-                  Discover the Magic of
-                  </h1>
-                  <h2
-                    className={`xl:text-[5rem] lg:text-5xl sm:text-2xl text-base font-bold md:mb-4 mb-2 uppercase ${londrinasketch.className}`}
-                  >
-                    {`Pachmarhi`}
-                  </h2>
+            className={`text-xs sm:text-base tracking-widest max-md:mt-10 mb-4`}
+          >
+            Pachmarhi ke Maze, Bas Tumhare Liye
+          </p>
+          <h1 className="xl:text-[3rem] lg:text-5xl sm:text-2xl text-base font-bold text-primary-main uppercase">
+          Discover the Magic of
+          </h1>
+          <h2
+            className={`xl:text-[5rem] lg:text-5xl sm:text-2xl text-base font-bold md:mb-4 mb-2 uppercase ${londrinasketch.className}`}
+          >
+            {`Pachmarhi`}
+          </h2>
             <p className="text-sm sm:text-sm mb-6 max-w-2xl mx-auto ">
              {`    Suhana Tours and Travels offers personalized tours in Pachmarhi, showcasing its stunning nature, rich culture, and hidden gems for unforgettable adventures.`}
             </p>
-            {/* <Link
-              href="#"
-              className="bg-primary-main text-white py-2 sm:py-3 px-4 sm:px-6 rounded-sm text-sm hover:bg-primary-main transition duration-300 font-medium"
+              <button onClick={handleOpen} className="bg-primary-main text-white py-2 sm:py-3 px-4 sm:px-6 rounded-sm text-sm hover:bg-primary-main transition duration-300 font-medium"
             >
               Explore Now
-            </Link> */}
-            <FormPopup />
+            </button>
           </div>
         </div>
     </div>
