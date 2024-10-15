@@ -28,15 +28,15 @@ const Navbar = () => {
     },
   ]
   return (
-    <nav className="bg-white border-gray-200  absolute z-20 w-full">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-white max-md:h-[50px] absolute z-20 w-full">
+  <div className="md:w-[85%]  flex flex-wrap items-center justify-between mx-auto md:p-4 max-md:py-1 max-md:px-4">
     <Link
       href="/"
       className="flex items-center space-x-3 rtl:space-x-reverse"
     >
       <img
-        src="/assets/images/about-images/logo-white.png"
-        className="h-10 scale-[3]"
+        src="/assets/images/about-images/logo.png"
+        className="md:h-10 max-md:h-8 max-md:pl-4 scale-[3]"
         alt="Flowbite Logo"
       />
     
