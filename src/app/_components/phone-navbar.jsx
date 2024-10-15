@@ -22,7 +22,7 @@ export default function PhoneNavbarDrawer() {
         path:'/packages',
     },
     {
-        name:'About us',
+        name:'About Us',
         link:'/about-us',
         path:'/about-us',
     },
@@ -44,7 +44,7 @@ export default function PhoneNavbarDrawer() {
       onClick={()=> setIsDrawer(true)}
     >
       <span className="sr-only">Open main menu</span>
-     <IoMenuSharp />
+     <IoMenuSharp className="text-2xl text-white" />
 
     </button>
       <div

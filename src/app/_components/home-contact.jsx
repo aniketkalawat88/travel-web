@@ -26,12 +26,12 @@ const HomeContact = () => {
   return (
     <div className="px-2 md:px-4 my-4 max-w-6xl flex mx-auto shadow shadow-primary-main bg-primary-main/10 rounded-lg" >
       <section className="md:p-6 sm:p-4 p-2 md:w-[60%] max-md:w-full">
-        <div className="flex justify-between">
+        <div className="flex justify-between max-md:justify-center">
           <div className=" md:max-w-xl lg:max-w-3xl">
-            <h2 className="mb-2 md:text-3xl sm:text-2xl text-xl font-bold text-primary-main ">Contact Us</h2>
+            <h2 className="mb-2 md:text-3xl sm:text-2xl text-xl font-bold text-primary-main">Contact Us</h2>
           </div>
         </div>
-          <p className="md:w-[80%] md:mb-8 max-md:mb-4 md:text-[16px] max-md:text-[12px]">Have questions or want to book your next adventure in Pachmarhi? We’re here to help!</p>
+          <p className="md:w-[80%] md:mb-8 max-md:mb-4 md:text-[16px] max-md:text-[12px] max-md:text-center">Have questions or want to book your next adventure in Pachmarhi? We’re here to help!</p>
         <div className="">
       
         <form className="md:gap-6 sm:gap-4 max-md:gap-2  md:text-base text-sm">

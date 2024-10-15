@@ -29,7 +29,7 @@ const page = () => {
                     <IoCall className="text-4xl bg-primary-main text-white p-2 rounded-lg" />
                     <div>
                         <p className="md:text-2xl sm:text-xl max-md:text-lg font-semibold">Phone</p>
-                        <p className="text-[#858587] max-md:text-[14px] md:mt-1.5 max-md:mt-1">+91 94256 39221</p>
+                        <p className="text-[#858587] max-md:text-[14px] md:mt-1.5 max-md:mt-1">+91 94256 39221</p> 
                     </div>
                 </div>
                 <div className="flex md:gap-6 gap-4 md:my-10 sm:my-8 my-6">
