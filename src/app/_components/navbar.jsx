@@ -28,8 +28,8 @@ const Navbar = () => {
     },
   ]
   return (
-    <nav className="bg-white border-gray-200 dark:bg-transparent absolute z-20 w-full">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-white max-md:h-[50px] absolute z-20 w-full">
+  <div className="md:w-[85%]  flex flex-wrap items-center justify-between mx-auto md:p-4 max-md:py-1 max-md:px-4">
     <Link
       href="/"
       className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -49,7 +49,7 @@ const Navbar = () => {
         <li key={i}>
           <Link
             href={ele.link}
-            className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-main md:p-0  md:dark:hover:text-primary-main dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${path === ele.link ? "text-primary-main" : "dark:text-white"}`}
+            className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-main md:p-0 md:text-[18px] md:dark:hover:text-primary-main dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${path === ele.link ? "text-primary-main" : "dark:text-primary-main/50"}`}
           >
             {ele.name}
           </Link>

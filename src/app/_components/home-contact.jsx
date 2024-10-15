@@ -24,7 +24,7 @@ const HomeContact = () => {
       };
     
   return (
-    <div className="px-2 md:px-4 my-4 max-w-6xl flex mx-auto shadow shadow-primary-main bg-primary-main/10 rounded-lg" >
+    <div className="md:px-4 max-md:px-6 my-4 max-w-6xl flex mx-auto shadow shadow-primary-main bg-primary-main/10 rounded-lg" >
       <section className="md:p-6 sm:p-4 p-2 md:w-[60%] max-md:w-full">
         <div className="flex justify-between max-md:justify-center">
           <div className=" md:max-w-xl lg:max-w-3xl">

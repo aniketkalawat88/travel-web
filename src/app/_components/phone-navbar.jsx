@@ -44,7 +44,7 @@ export default function PhoneNavbarDrawer() {
       onClick={()=> setIsDrawer(true)}
     >
       <span className="sr-only">Open main menu</span>
-     <IoMenuSharp className="text-2xl text-white" />
+     <IoMenuSharp className="text-2xl text-gray-500" />
 
     </button>
       <div

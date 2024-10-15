@@ -22,27 +22,27 @@ export default function HeroSection() {
     {
       name:'Rajesh',
       img:'01.jpg',
-      data:'Love how easy it is to update our menu! Customers in Mumbai are loving the digital experience. Thanks, Smart Digital QR Menu!'
+      data:'Wonderful experience with Suhana Tour & Travels! The Pachmarhi trip was well-planned. Perfect for a peaceful and scenic holiday.'
     },
     {
       name:' Anjali',
       img:'03.jpg',
-      data:'Switched to Smart Digital QR Menu in Pune and it’s been a game-changer! No more reprinting menus. Customers are impressed!'
+      data:'Amazing Pachmarhi tour! The itinerary covered all the must-see spots. A truly hassle-free and delightful experience!'
     },
     {
       name:'Ravi',
       img:'04.jpg',
-      data:'We went digital in Bangalore with Smart Digital QR Menu. The real-time updates are fantastic. Our customers can’t stop talking about it!'
+      data:'A memorable Pachmarhi trip! Suhana Tour and Travels handled everything perfectly, from transportation to accommodation. Highly professional and friendly service.'
     },
     {
       name:'Pooja',
       img:'06.jpg',
-      data:'Smart Digital QR Menu made life so much easier in our Delhi cafe. Quick updates and zero hassle. Highly recommend!'
+      data:'Fantastic experience with Suhana Tour and Travels! Well-organized, beautiful sights, and excellent service throughout. Highly recommended for a relaxing Pachmarhi getaway!'
     },
     {
       name:'Sandeep',
       img:'11.jpg',
-      data:'Hyderabad customers are loving the interactive digital menu. Smart Digital QR Menu is super efficient and easy to use. Great decision!'
+      data:'Great tour! Suhana made the Pachmarhi trip smooth and enjoyable. Loved the scenic spots. Will definitely book with them again.'
     },
   ]
   return (
