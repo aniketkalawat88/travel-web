@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import { RxCrossCircled } from "react-icons/rx";
 import { useDispatch, useSelector } from 'react-redux';
 import { closeModel } from '../redux/modelSlice/modelSlice';
+import axios from 'axios';
+import { toast, ToastContainer } from 'react-toastify';
+import { TbLoaderQuarter } from "react-icons/tb";
 
 export default function FormPopup() {
   const dispatch = useDispatch();
@@ -13,7 +16,7 @@ export default function FormPopup() {
   const handleClose = () => (
     dispatch(closeModel())
   )
-
+  const [isLoading , setIsLoading] = useState(false);
   const [isData , setIsData] = useState({
     name:'',
     email:'',
@@ -47,17 +50,41 @@ export default function FormPopup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(isData ,"isData");
+    try{
+      setIsLoading(true)
+      const isFetch = axios.post("https://sheetdb.io/api/v1/59aqknib5ssla", isData);
+      console.log(isFetch , "12345");
+      setIsLoading(false)
+      toast.success("Form Submitted Succesfully")
+      setTimeout(()=> {
+        handleClose()
+      },3000)
+      setIsData({
+        name:'',
+        email:'',
+        number:'',
+        date:'',
+        message:'',
+      })
+    }
+    catch(err){
+      setIsLoading(false)
+      console.log(err,"error hai");
+      toast.error("Error not Submitted")
+    }
+
   }
 
   return (
-    <div>
+    <>
       {isOpen && ( // Conditional rendering of modal based on isOpen state
         <div
           id="contactFormModal"
           className="fixed z-20 inset-0 overflow-y-auto"
         >
-          <div className="flex items-center justify-center min-h-screen bg-black/90">
-            <div className="bg-white w-full max-w-md rounded shadow-md border-2 border-primary-main">
+          <div className="flex items-center justify-center min-h-screen bg-black/80">
+            <div className="bg-green-50 w-full max-w-5xl rounded shadow-md ">
+            <ToastContainer autoClose={3000} closeOnClick/>
               <div className="flex justify-end p-2">
                 {/* Close Button */}
                 <button
@@ -67,8 +94,8 @@ export default function FormPopup() {
                   <RxCrossCircled />
                 </button>
               </div>
-              <h2 className="text-2xl font-bold mb-4 text-primary-main px-4">Contact Us</h2>
-              <form onSubmit={handleSubmit} className='grid grid-cols-1 gap-2 text-start h-96 overflow-y-scroll p-6'>
+              <h2 className="text-3xl font-bold mb-4 text-primary-main px-4 text-center">Contact Us</h2>
+              <form onSubmit={handleSubmit} className='grid grid-cols-2 gap-3 text-start  p-6'>
                 <div className="mb-4">
                   <label
                     htmlFor="name"
@@ -82,7 +109,8 @@ export default function FormPopup() {
                     name="name"
                     value={isData.name}
                     onChange={handleChange}
-                    className="w-full p-2 border rounded-md focus:outline-none text-black"
+                    className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
+                    required
                   />
                 </div>
                 <div className="mb-4">
@@ -98,7 +126,8 @@ export default function FormPopup() {
                     name="email"
                     value={isData.email}
                     onChange={handleChange}
-                    className="w-full p-2 border rounded-md focus:outline-none text-black"
+                    className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
+                    required
                   />
                 </div>
                 <div className="mb-4">
@@ -114,7 +143,8 @@ export default function FormPopup() {
                     name="number"
                     value={isData.number}
                     onChange={handleChange}
-                    className="w-full p-2 border rounded-md focus:outline-none text-black"
+                    className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
+                    required
                   />
                 </div>
                 <div className="mb-4">
@@ -130,10 +160,11 @@ export default function FormPopup() {
                     name="date"
                     value={isData.date}
                     onChange={handleChange}
-                    className="w-full p-2 border rounded-md focus:outline-none text-black"
+                    className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
+                    required
                   />
                 </div>
-                <div className="mb-4 ">
+                <div className="mb-4 md:col-span-2">
                   <label
                     htmlFor="message"
                     className="block text-primary-main text-sm font-bold mb-2"
@@ -145,20 +176,21 @@ export default function FormPopup() {
                     name="message"
                     value={isData.message}
                     onChange={handleChange}
-                    className="w-full p-2 border rounded-md focus:outline-none text-black"
+                    className="w-full p-2 border rounded-md focus:outline-none text-black bg-white resize-none h-32"
+                    required
                   />
                 </div>
                 <button
                   type="submit"
-                  className="bg-primary-main-500 text-white font-bold py-2 px-4 rounded bg-primary-main w-fit"
+                  className="bg-primary-main-500 text-white font-bold py-2 px-4 rounded bg-primary-main w-fit flex items-center gap-4"
                 >
-                  Send Message
+                  Send Message {isLoading && <TbLoaderQuarter className='animate-spin' />}
                 </button>
               </form>
             </div>
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="col-span-full lg:col-span-4 relative text-gray-800  md:gap-6 max-md:gap-3 md:p-6 lg:w-72 md:h-72 max-md:py-6 flex flex-col justify-center ">
           <Link
               href="/"
-              className="flex items-center justify-center space-x-3 rtl:space-x-reverse pr-32"
+              className="flex items-center justify-center space-x-3 rtl:space-x-reverse md:pr-32"
             >
               <img
                 src="/assets/images/about-images/logo.png"
@@ -45,7 +45,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className='flex justify-between md:gap-10  lg:col-span-4'>
+          <div className='flex justify-between md:gap-24  lg:col-span-4'>
             <div className="block lg:py-12 col-span-full min-[500px]:col-span-6 md:col-span-2 lg:col-span-3">
               <h4 className="text-lg text-primary-main font-bold md:mb-9 max-md:mb-3 text-center lg:text-left">
                 Quick Links
@@ -103,7 +103,7 @@ const Footer = () => {
         <div className="flex items-center justify-center">
           <span className="text-sm text-white ">
             Copyright@2024 All Right Reserved by{" "}
-            <a href="/">IgrowMyBiz</a>
+            <a href="/">IgrowMyBiz</a> 
           </span>
         </div>
       </div>

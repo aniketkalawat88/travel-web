@@ -56,13 +56,16 @@ export default function PhoneNavbarDrawer() {
           id="drawer-navigation-label"
           className="text-base font-semibold text-white uppercase dark:text-white"
         >
-         <Link href='/' className="flex items-center">
-      <img
-        src="/assests/logo.png"
-        className="h-12 mr-3"
-        alt="Logo"
-      />
-    </Link>
+       <div
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="/assets/images/about-images/logo-white.png"
+            className="h-10 md:scale-[3] scale-150"
+            alt="Flowbite Logo"
+          />
+        
+        </div>
         </h5>
         <button
           type="button"
