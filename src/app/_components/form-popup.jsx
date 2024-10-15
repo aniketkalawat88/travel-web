@@ -22,6 +22,7 @@ export default function FormPopup() {
     email:'',
     number:'',
     date:'',
+    enddate:'',
     message:'',
   })
 
@@ -47,12 +48,12 @@ export default function FormPopup() {
     }
   }
   
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(isData ,"isData");
     try{
       setIsLoading(true)
-      const isFetch = axios.post("https://sheetdb.io/api/v1/59aqknib5ssla", isData);
+      const isFetch = await axios.post("https://sheetdb.io/api/v1/59aqknib5ssla", isData);
       console.log(isFetch , "12345");
       setIsLoading(false)
       toast.success("Form Submitted Succesfully")
@@ -64,6 +65,7 @@ export default function FormPopup() {
         email:'',
         number:'',
         date:'',
+        enddate:'',
         message:'',
       })
     }
@@ -132,6 +134,7 @@ export default function FormPopup() {
                     required
                   />
                 </div>
+                <div className="grid md:grid-cols-3 md:col-span-2 gap-4">
                 <div className="mb-4">
                   <label
                     htmlFor="tel"
@@ -150,23 +153,42 @@ export default function FormPopup() {
                     required
                   />
                 </div>
-                <div className="mb-4">
-                  <label
-                    htmlFor="date"
-                    className="block text-primary-main text-sm font-bold mb-2"
-                  >
-                    Date
-                  </label>
-                  <input
-                    type="date"
-                    id="date"
-                    name="date"
-                    value={isData.date}
-                    onChange={handleChange}
-                    placeholder='Please Enter Your Date'
-                    className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
-                    required
-                  />
+                  <div className="mb-4">
+                    <label
+                      htmlFor="date"
+                      className="block text-primary-main text-sm font-bold mb-2"
+                    >
+                      Start Date
+                    </label>
+                    <input
+                      type="date"
+                      id="date"
+                      name="date"
+                      value={isData.date}
+                      onChange={handleChange}
+                      placeholder='Please Enter Your Date'
+                      className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
+                      required
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <label
+                      htmlFor="date"
+                      className="block text-primary-main text-sm font-bold mb-2"
+                    >
+                      End Date
+                    </label>
+                    <input
+                      type="date"
+                      id="date"
+                      name="enddate"
+                      value={isData.enddate}
+                      onChange={handleChange}
+                      placeholder='Please Enter Your Date'
+                      className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
+                      required
+                    />
+                  </div>  
                 </div>
                 <div className="mb-4 md:col-span-2">
                   <label
@@ -186,6 +208,7 @@ export default function FormPopup() {
                   />
                 </div>
                 <button
+                disabled={isLoading}
                   type="submit"
                   className="bg-primary-main-500 text-white font-bold py-2 px-4 rounded bg-primary-main w-fit flex items-center gap-4"
                 >

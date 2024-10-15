@@ -36,7 +36,7 @@ const page = () => {
                     <IoMail className="text-4xl bg-primary-main text-white p-2 rounded-lg" />
                     <div>
                         <p className="md:text-2xl sm:text-xl max-md:text-lg font-semibold">Email</p>
-                        <p className="text-[#858587] max-md:text-[14px] md:mt-1.5 max-md:mt-1">suhantoursandtravelspachmarhi@gmail.com</p>
+                        <p className="text-[#858587] max-md:text-[14px] md:mt-1.5 max-md:mt-1">suhantoursandtravelspachmarhi<span className='max-sm:block'>@gmail.com</span></p>
                     </div>
                 </div>
                 <div className="flex md:gap-6 gap-4 md:my-10 sm:my-8 my-6">
