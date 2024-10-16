@@ -1,10 +1,6 @@
-import { Inter, Montserrat , Londrina_Sketch , Poppins , Spinnaker} from "next/font/google";
+import { Montserrat , Londrina_Sketch } from "next/font/google";
 
 // If loading a variable font, you don't need to specify the font weight
-export const inter = Inter({
-    subsets: ["latin"],
-    display: "swap",
-  });
 
   export const montserrat = Montserrat({
     subsets: ["latin"],
@@ -16,8 +12,4 @@ export const inter = Inter({
     weight:['400']
   });
     
-  export const spinnaker = Spinnaker({
-    subsets: ["latin"],
-    weight:['400']
-  });
     
