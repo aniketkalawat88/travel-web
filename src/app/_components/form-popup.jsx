@@ -116,7 +116,7 @@ export default function FormPopup() {
                     required
                   />
                 </div>
-                <div className="mb-4">
+                {/* <div className="mb-4">
                   <label
                     htmlFor="email"
                     className="block text-primary-main text-sm font-bold mb-2"
@@ -133,9 +133,8 @@ export default function FormPopup() {
                     className="w-full p-2 border rounded-md focus:outline-none text-black bg-white"
                     required
                   />
-                </div>
-                <div className="grid md:grid-cols-3 md:col-span-2 gap-4">
-                <div className="mb-4">
+                </div> */}
+                  <div className="mb-4">
                   <label
                     htmlFor="tel"
                     className="block text-primary-main text-sm font-bold mb-2"
@@ -153,6 +152,8 @@ export default function FormPopup() {
                     required
                   />
                 </div>
+                <div className="grid md:grid-cols-2 md:col-span-2 gap-4">
+              
                   <div className="mb-4">
                     <label
                       htmlFor="date"
@@ -190,7 +191,7 @@ export default function FormPopup() {
                     />
                   </div>  
                 </div>
-                <div className="mb-4 md:col-span-2">
+                {/* <div className="mb-4 md:col-span-2">
                   <label
                     htmlFor="message"
                     className="block text-primary-main text-sm font-bold mb-2"
@@ -206,7 +207,7 @@ export default function FormPopup() {
                     className="w-full p-2 border rounded-md focus:outline-none text-black bg-white resize-none h-32"
                     required
                   />
-                </div>
+                </div> */}
                 <button
                 disabled={isLoading}
                   type="submit"
