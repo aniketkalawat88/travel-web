@@ -16,9 +16,9 @@ const Packages = () => {
       name: "Couple Friendly Budget package By  Suhana Tours and Travels For 2 pax",
       price: "10,000",
       data: [
-        "Pick Up from Pipariya to pachmarhi",
-        "Drop from pachmarhi to pipariya",
-        "3N/2D stay in Budget Non Ac room",
+        "Pick Up from Pipariya to Pachmarhi",
+        "Drop from Pachmarhi to Pipariya",
+        "3N/2D stay in Budget Non AC room",
         "Sightseeing-non entry/forest entry ",
       ],
     },
@@ -27,8 +27,8 @@ const Packages = () => {
       name: "Couple Friendly Standard package By Suhana Tours and Travels For 2 pax",
       price: "13,000",
       data: [
-        "Pick Up from Pipariya to pachmarhi",
-        "Drop from pachmarhi to pipariya",
+        "Pick Up from Pipariya to Pachmarhi",
+        "Drop from Pachmarhi to Pipariya",
         "3N/2D stay in AC room",
         "Sightseeing-non entry/forest entry",
       ],
@@ -38,8 +38,8 @@ const Packages = () => {
       name: "Family package By Suhana Tours and Travels For 4 pax",
       price: "26,500",
       data: [
-        "Pick Up from Pipariya to pachmarhi",
-        "Drop from pachmarhi to pipariya",
+        "Pick Up from Pipariya to Pachmarhi",
+        "Drop from Pachmarhi to Pipariya",
         "3N/2D Deluxe stay in Executive rooms",
         "Sightseeing-non entry/forest entry",
         "Jungle safari core/buffer zone ",
@@ -48,11 +48,11 @@ const Packages = () => {
     {
       img: "/assets/images/about-images/07.jpg",
       name: "Family package Standard By Suhana Tours and Travels For 4 pax ",
-      price: "46200",
+      price: "46,200",
       data: [
-        "Pick Up from Pipariya to pachmarhi",
-        "Drop from pachmarhi to pipariya",
-        "3N/2D stay luxury resort rooms.",
+        "Pick Up from Pipariya to Pachmarhi",
+        "Drop from Pachmarhi to Pipariya",
+        "3N/2D stay luxury Resort rooms.",
         "Sightseeing-non entry/forest entry",
         "Jungle safari core/buffer zone",
       ],
@@ -106,7 +106,7 @@ const Packages = () => {
                   onClick={handleOpen}
                   className="flex items-center justify-center md:px-5 max-md:px-3 md:py-3 max-md:py-2  leading-6 font-medium rounded-md focus:outline-none focus:ring transition duration-200 ease-in-out shadow-teal border-2 border-primary-main bg-white text-primary-main  md:text-md max-md:text-sm relative dark:bg-primary-main dark:text-white "
                 >
-                  Book Packages
+                  Book Package
                 </button>
                 <div className="rounded-md shadow">
                   <Link

@@ -20,28 +20,28 @@ import Image from "next/image";
 export default function HeroSection() {
   const rev = [
     {
-      name:'Rajesh',
-      img:'01.jpg',
+      name:'Raj Verma',
+      img:'t04.jpg',
       data:'Wonderful experience with Suhana Tour & Travels! The Pachmarhi trip was well-planned. Perfect for a peaceful and scenic holiday.'
     },
     {
-      name:' Anjali',
-      img:'03.jpg',
+      name:'Anjali Tiwari',
+      img:'t01.jpg',
       data:'Amazing Pachmarhi tour! The itinerary covered all the must-see spots. A truly hassle-free and delightful experience!'
     },
     {
-      name:'Ravi',
-      img:'04.jpg',
+      name:'Ravi Gupta',
+      img:'t03.avif',
       data:'A memorable Pachmarhi trip! Suhana Tour and Travels handled everything perfectly, from transportation to accommodation. Highly professional and friendly service.'
     },
     {
-      name:'Pooja',
-      img:'06.jpg',
+      name:'Pooja Sharma',
+      img:'t02.avif',
       data:'Fantastic experience with Suhana Tour and Travels! Well-organized, beautiful sights, and excellent service throughout. Highly recommended for a relaxing Pachmarhi getaway!'
     },
     {
-      name:'Sandeep',
-      img:'11.jpg',
+      name:'Sandeep Kumar',
+      img:'t05.avif',
       data:'Great tour! Suhana made the Pachmarhi trip smooth and enjoyable. Loved the scenic spots. Will definitely book with them again.'
     },
   ]

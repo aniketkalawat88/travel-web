@@ -14,8 +14,8 @@ const HomeAbout = () => {
                 <h1 className="md:text-3xl sm:text-2xl text-base font-bold tracking-tight text-gray-900 dark:text-black leading-9 dark:text-heading-main md:pb-4 max-md:pb-2 max-md:text-center">
                  <span className="text-black">About Us</span>
                 </h1>
-                <p className={`font-normal md:text-base text-xs md:leading-6 text-secondary-main dark:text-[#666666] max-md:text-justify`}>
-                {`At Suhana Tours and Travels, we offer personalized tours that highlight the natural beauty and hidden gems of Pachmarhi. As locals, we bring in-depth knowledge and a passion for sustainable travel, ensuring every visitor experiences the best of Pachmarhi’s culture, nature, and hidden gems of Pachmarhi. As locals, we bring in-depth knowledge and a passion for sustainable travel, ensuring every visitor experiences the best of Pachmari hidden gems of Pachmarhi. As locals, we bring in-depth knowledge and a passion for sustainable travel, ensuring every visitor experiences the best of Pachmar adventure.`}
+                <p className={`font-normal md:text-base max-md:text-[14px] md:leading-6 text-secondary-main dark:text-[#666666] max-md:text-justify`}>
+                {`At Suhana Tours and Travels, we specialize in personalized tours that showcase the natural beauty and hidden treasures of Pachmarhi. As locals with deep knowledge of the area, we are passionate about promoting sustainable travel. Our tours are designed to immerse visitors in the rich culture, stunning landscapes, and unique experiences that Pachmarhi has to offer. Whether it’s exploring serene waterfalls, ancient caves, or breathtaking viewpoints, we ensure that every traveler enjoys an authentic and unforgettable journey. Discover Pachmarhi’s charm with us and create lasting memories in this beautiful hill station.`}
                 </p>
               {/* <Link
                   href={'/about-us'}
