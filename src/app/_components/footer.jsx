@@ -21,8 +21,8 @@ const Footer = () => {
               />
             
             </Link>
-            <p className="text-left text-gray-600 text-base font-medium max-md:text-center">
-              Trusted in more than 100 countries &amp; 5 million customers. Have a
+            <p className="text-left text-gray-600 md:text-[20px] font-medium max-md:text-center">
+              Discover the magic of Pachmarhi
             </p>
             <div className="flex space-x-4 max-md:justify-evenly max-md:px-10">
               <Link
@@ -45,7 +45,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className='flex justify-between md:gap-24  lg:col-span-4'>
+          <div className='flex justify-between md:gap-20 lg:col-span-4'>
             <div className="block lg:py-12 col-span-full min-[500px]:col-span-6 md:col-span-2 lg:col-span-3">
               <h4 className="text-lg text-primary-main font-bold md:mb-9 max-md:mb-3 text-center lg:text-left">
                 Quick Links
@@ -77,7 +77,7 @@ const Footer = () => {
                     Couple friendly
                   </li>
                   <li>
-                    Couple friendly standard
+                    Couple friendly  standard
                   </li>
                   <li>
                     Family packages
@@ -89,11 +89,11 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="block text-center lg:text-left lg:py-12 col-span-full min-[500px]:col-span-6 md:col-span-2 lg:col-span-3 lg:pl-5 max-md:mt-3 max-md:mb-4 ">
+          <div className="block text-center lg:text-left lg:py-12 col-span-full min-[500px]:col-span-6 md:col-span-2 lg:col-span-3 lg:pl-5 max-md:mt-3 md:ml-4 max-md:mb-4 ">
             <h4 className="text-lg text-primary-main font-bold md:mb-9 max-md:mb-3">Get In Touch</h4>
             <ul className="text-gray-600 transition-all duration-500 grid md:gap-6 max-md:gap-3 text-base font-medium">
               <li>suhantoursandtravelspachmarhi@gmail.com</li>
-              <li>+91 945 658 3256</li>
+              <li>+91 942 563 9221 / +91 945 658 3256</li>
               <li>Patel road ward no 02, Beside Khalsa Hotel, Pachmarhi, Madhya Pradesh</li>
             </ul>
           </div>
