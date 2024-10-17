@@ -157,7 +157,7 @@ const HomeContact = () => {
             <button
               type="button"
               disabled={isLoading}
-              className="rounded bg-primary-main px-6 py-2.5 font-medium leading-normal text-white hover:shadow-md hover:bg-primary-main sm:w-fit w-full sm:text-base text-xs flex items-center gap-4"
+              className="rounded bg-primary-main px-6 py-2.5 font-medium leading-normal text-white hover:shadow-md hover:bg-primary-main sm:w-fit w-full sm:text-base text-xs flex items-center gap-4 justify-center"
             >
               Send Message {isLoading && <TbLoaderQuarter className='animate-spin' />}
             </button>
