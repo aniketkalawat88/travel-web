@@ -16,6 +16,8 @@ const HomePackage = () => {
     const arr = [
       {
         img:'/assets/images/about-images/04.jpg',
+        pack:'Couple Budget Package for 2 pax',
+        det:'3N/2D stay in Budget Non Ac room',
         location:'',
         name:'',
         day:'5',
@@ -23,6 +25,8 @@ const HomePackage = () => {
       },
       {
         img:'/assets/images/about-images/05.jpg',
+        pack:'Couple Standard Package for 2 pax',
+        det:'3N/2D stay in AC room ',
         location:'',
         name:'',
         day:'7',
@@ -30,6 +34,8 @@ const HomePackage = () => {
       },
       {
         img:'/assets/images/about-images/06.jpg',
+        pack:'Family Budget Package for 4 pax',
+        det:'3N/2D Deluxe stay in Executive room',
         location:'',
         name:'',
         day:'4',
@@ -58,9 +64,9 @@ const HomePackage = () => {
                       <span className="md:text-[16px] max-md:text-[12px]"> Pachmarhi</span>
                     </div>
                     <h2 className="md:text-lg sm:text-base text-sm font-semibold mb-2">
-                    Couple Friendly Budget package For 2 pax
+                    {ele.pack}
                     </h2>
-                    <div className="text-gray-500 md:mb-4 max-md:mb-2 sm:text-base text-sm"> 3N/2D stay in Budget Non Ac Room</div>
+                    <div className="text-gray-500 md:mb-4 max-md:mb-2 sm:text-base text-sm"> {ele.det}</div>
                     <div className="flex items-start lg:col-span-1 md:pt-1 mb-4">
                         <p className="mt-2 md:text-lg max-md:text-md leading-5 text-primary-main font-ttnorms text-left ">
                         <span className="md:text-[24px] max-md:text-[20px] font-700">{ele.price} /</span> Total package cost

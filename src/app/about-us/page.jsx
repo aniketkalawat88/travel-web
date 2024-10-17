@@ -38,7 +38,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <PackageHero name={"About Us"} img={"/assets/images/about-images/12.jpg"} data={'loremcfghcfhu dtfuio drgy loremcfghcfhu dtfuio drgyloremcfghcfhu dtfuio drgyloremcfghcfhu dtfuio drgy'} />
+      <PackageHero name={"About Us"} img={"/assets/images/about-images/12.jpg"} page={'About Us'} />
       <HomeAbout />
       <div className="flex items-center justify-evenly md:py-4 text-primary-main">
         <div className="experience flex flex-col items-center">
