@@ -96,7 +96,7 @@ const Footer = () => {
             <h4 className="text-lg text-primary-main font-bold md:mb-9 max-md:mb-3">Get In Touch</h4>
             <ul className="text-gray-600 transition-all duration-500 grid md:gap-6 max-md:gap-3 text-base font-medium">
               <Link href={"mailto:suhantoursandtravelspachmarhi@gmail.com"} className='hover:text-primary-main transition-transform'>suhantoursandtravelspachmarhi@gmail.com</Link>
-              <li><Link href={'tel:+919425639221'} className='hover:text-primary-main transition-transform' >+91 942 563 9221</Link> / <Link href={'tel:+919456583256'} className='hover:text-primary-main transition-transform' >+91 945 658 3256</Link></li>
+              <li><Link href={'tel:+919425639221'} className='hover:text-primary-main transition-transform' >+91 942 563 9221</Link> / <Link href={'tel:+919425685663 '} className='hover:text-primary-main transition-transform' >+91 942 568 5663</Link></li>
               <li>Patel road ward no 02, Beside Khalsa Hotel, Pachmarhi, Madhya Pradesh</li>
             </ul>
           </div>
