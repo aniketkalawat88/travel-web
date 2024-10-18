@@ -5,6 +5,7 @@ import Footer from "./_components/footer";
 import { Providers } from "./redux/provider";
 import FormPopup from "./_components/form-popup";
 import 'react-toastify/dist/ReactToastify.css';
+import Whatsapp from "./_components/Whatsapp";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,11 +27,12 @@ export default function RootLayoutFor({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
         <Providers>
         <Navbar />
         <FormPopup />
+        <Whatsapp />
         {children}
         <Footer />
         </Providers>

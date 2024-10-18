@@ -15,6 +15,7 @@ const Packages = () => {
       img: "/assets/images/about-images/04.jpg",
       name: "Couple Friendly Budget package By  Suhana Tours and Travels For 2 pax",
       price: "10,000",
+      section:'couple',
       data: [
         "Pick Up from Pipariya to Pachmarhi",
         "Drop from Pachmarhi to Pipariya",
@@ -26,6 +27,7 @@ const Packages = () => {
       img: "/assets/images/about-images/05.jpg",
       name: "Couple Friendly Standard package By Suhana Tours and Travels For 2 pax",
       price: "13,000",
+      section:'couplestandard',
       data: [
         "Pick Up from Pipariya to Pachmarhi",
         "Drop from Pachmarhi to Pipariya",
@@ -37,6 +39,7 @@ const Packages = () => {
       img: "/assets/images/about-images/06.jpg",
       name: "Family package By Suhana Tours and Travels For 4 pax",
       price: "26,500",
+      section:'family',
       data: [
         "Pick Up from Pipariya to Pachmarhi",
         "Drop from Pachmarhi to Pipariya",
@@ -49,6 +52,7 @@ const Packages = () => {
       img: "/assets/images/about-images/07.jpg",
       name: "Family package Standard By Suhana Tours and Travels For 4 pax ",
       price: "46,200",
+      section:'familystandard',
       data: [
         "Pick Up from Pipariya to Pachmarhi",
         "Drop from Pachmarhi to Pipariya",
@@ -62,6 +66,7 @@ const Packages = () => {
     <div className="max-w-6xl mx-auto md:space-y-16 max-md:space-y-4 md:my-10 max-md:my-8">
       {pack.map((ele, i) => (
         <div
+          id={ele.section}
           key={i}
           className="md:h-auto overflow-hidden lg:max-w-none lg:flex shadow-teal bg-white rounded-lg shadow-lg max-md:py-4"
         >
@@ -76,7 +81,6 @@ const Packages = () => {
             <div className="flex items-center text-primary-main my-2">
               <FaLocationDot className="mr-2 md:text-[20px] max-md:text-[10px]"></FaLocationDot>
               <span className="md:text-[16px] max-md:text-[12px]">
-                {" "}
                 Pachmarhi
               </span>
             </div>
