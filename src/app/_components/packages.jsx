@@ -114,7 +114,7 @@ const Packages = () => {
                 </button>
                 <div className="rounded-md shadow">
                   <Link
-                    href="tel:+919456583256"
+                    href="tel:+919425639221"
                     className="flex items-center justify-center md:px-5 max-md:px-3 md:py-3 max-md:py-2  leading-6 font-medium rounded-md focus:outline-none focus:ring transition duration-200 ease-in-out shadow-teal border-2 border-primary-main bg-white text-primary-main  md:text-md max-md:text-sm relative dark:text-primary-main"
                   >
                     Call Now
