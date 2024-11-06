@@ -45,7 +45,7 @@ const HomeContact = () => {
         // console.log(formData); 
         try{
           setIsLoading(true)
-          const isFetch = await axios.post("https://sheetdb.io/api/v1/59aqknib5ssla", formData);
+          const isFetch = await axios.post("https://sheetdb.io/api/v1/sdwhwdpjonp41", formData);
           console.log(isFetch , "12345");
           setIsLoading(false)
           toast.success("Form Submitted Succesfully")
@@ -153,7 +153,7 @@ const HomeContact = () => {
               required
             />
           </div>
-          <div className="md:col-span-3">
+          <div className="md:col-span-3 ">
             <button
               type="button"
               disabled={isLoading}
